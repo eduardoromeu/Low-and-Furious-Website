@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Low And Furious</title>
+  <link rel="icon" type="image/x-icon" href="img/icons/favicon.png">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand sticky-top bg-light justify-content-center">
+      <div class="container-fluid flex-wrap row gy-3 px-0 py-3">
+        <div class="d-flex col-12 col-md-3 justify-content-center justify-content-md-start">
+          <a class="navbar-brand m-0 p-0" href="index.html">
+            <div class="studio-logo">
+              <img src="img/codeit_logo_black_512.png" alt="CodeIt Logo"
+                class="studio-logo d-inline-block align-text-top">
+            </div>
+            <!-- Low And Furious -->
+          </a>
+        </div>
+
+        <div
+          class="navbar-nav col-12 col-md-6 align-items-center justify-content-around justify-content-md-center px-0">
+          <a class="nav-link border-bottom border-primary" href="index.html">Home</a>
+          <a class="nav-link" href="#game-contents">Conteúdo</a>
+          <a class="nav-link"
+            href="https://www.central-mods.com.br/search/label/Baixos%20de%20Quebrada?&max-results=7">Blog</a>
+          <a class="nav-link" href="privacy.html">Privacidade</a>
+        </div>
+
+        <div class="navbar-nav col-12 col-md-3 align-items-center justify-content-around row-cols-3 gap-3 px-3">
+          <a class="btn btn-light btn col-5" href="#">Steam</a>
+          <a class="btn btn-success btn col-7" href="https://store.steampowered.com/app/2408060/Low_and_Furious/">+
+            Lista de desejo</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="video-banner">
+      <div class="banner-foreground d-flex flex-column align-items-center justify-content-between">
+        <div class="video-controls w-100 d-flex justify-content-end">
+          <button class="btn btn-light rounded-circle p-1 m-3" onclick="ToggleVideoMute()">
+            <img src="img/icons/volume_up_black_24dp.svg" class="sound-img mute-on">
+          </button>
+        </div>
+        <div class="banner-call d-flex flex-column align-items-center">
+          <h1 style="color: black;">SEU BAIXO DOS SONHOS</h1>
+          <p>EM BREVE</p>
+
+          <img class="SteamLogo" src="./img/SteamLogo_Dark.png" alt="LogoSteam" width="200" height="100">
+          <a href="https://store.steampowered.com/app/2408060/Low_and_Furious/" class="w-50 text-center"
+            style="display: inline-block; text-align: center; text-decoration: none;">
+            <div class="container" style="position: relative; display: inline-block;">
+              <img class="play-badge" src="./img/BTADDList.png" alt="+ Lista desejo"
+                style="max-width: 35%; height: auto;">
+              <p
+                style="color: blanchedalmond; font-size: 25px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin: 0;">
+                + Lista de desejo</p>
+
+            </div>
+
+
+
+          </a>
+        </div>
+        <div class="banner-bottom w-100 d-flex justify-content-center p-3">
+          <div>
+            <a href="https://youtu.be/zJjG1MIC6O8" target="_blank"
+              class="link-light text-decoration-none text-nowrap border-bottom">
+              Ver no youtube
+              <img class="banner-bottom-icon" src="./img/icons/open_in_new_black_24dp.svg">
+            </a>
+          </div>
+          <div class="d-flex flex-row justify-content-center align-items-center">
+            <img src="./img/icons/keyboard_double_arrow_down_black_24dp.svg" class="inverted-svg">
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div class="video-bg">
+        <video autoplay muted loop id="gameplay-bg" poster="">
+          <source src="./videos/preview1.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <section class="container-fluid game-contents py-3 px-2 px-md-3 gap-2 gap-md-3 d-flex flex-column flex-lg-row"
+      id="game-contents">
+
+      <div class="feature-card card p-0 d-flex align-items-center">
+        <div
+          class="card card-emphasys w-100 border-0 rounded-0 top-0 p-2 gap-2 d-flex flex-nowrap flex-row justify-content-center align-items-center">
+          <div class="card-emphasys-img">
+            <img class="w-100" src="./img/icons/build_black_24dp.svg" alt="garage tools">
+          </div>
+          <h5 class="card-title text-light m-0">Customização</h5>
+        </div>
+
+        <div class="carousel slide carousel-fade feature-card-img card-img-bottom" id="customization-images"
+          data-bs-ride="carousel" data-bs-pause="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/gameplay/gameplay (18).png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/gameplay/gameplay (19).png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/gameplay/gameplay (20).png" class="d-block w-100">
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-emphasys text-light text-center text-nowrap w-100 bottom-0 border-0 rounded-0 p-2">
+          <h6>Além de uma variedade de veículos!</h6>
+        </div>
+      </div>
+
+      <div class="feature-card card p-0 d-flex align-items-center">
+        <div
+          class="card card-emphasys w-100 border-0 rounded-0 top-0 p-2 gap-2 d-flex flex-nowrap flex-row justify-content-center align-items-center">
+          <div class="card-emphasys-img">
+            <img class="w-100" src="./img/icons/public_black_24dp.svg" alt="earth icon">
+          </div>
+          <h5 class="card-title text-light m-0">Mundo Aberto</h5>
+        </div>
+
+        <div class="carousel slide carousel-fade feature-card-img card-img-bottom" id="world-images"
+          data-bs-ride="carousel" data-bs-pause="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/gameplay/gameplay (13).png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/gameplay/gameplay (21).png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/gameplay/gameplay (1).png" class="d-block w-100">
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-emphasys text-light text-center text-nowrap w-100 bottom-0 border-0 rounded-0 p-2">
+          <h6>Ambientado no Brasil!</h6>
+        </div>
+      </div>
+
+      <div class="feature-card card p-0 d-flex align-items-center">
+        <div
+          class="card card-emphasys w-100 border-0 rounded-0 top-0 p-2 gap-2 d-flex flex-nowrap flex-row justify-content-center align-items-center">
+          <div class="card-emphasys-img">
+            <img class="w-100" src="./img/icons/paid_black_24dp.svg" alt="coin">
+          </div>
+          <h5 class="card-title text-light m-0">Serviços e Corridas</h5>
+        </div>
+
+        <div class="carousel slide carousel-fade feature-card-img card-img-bottom" id="services-images"
+          data-bs-ride="carousel" data-bs-pause="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/gameplay/gameplay (11).png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/gameplay/gameplay (16).png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/gameplay/gameplay (17).png" class="d-block w-100">
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-emphasys text-light text-center text-nowrap w-100 bottom-0 border-0 rounded-0 p-2">
+          <h6>Ganhe e gaste do jeito que quiser!</h6>
+        </div>
+      </div>
+    </section>
+
+    <section class="game-setting">
+
+    </section>
+  </main>
+
+  <aside class="social-buttons m-4 d-flex flex-column justify-content-around">
+    <a href="https://www.instagram.com/codeitstudio/" target="_blank" rel="noopener noreferrer"
+      class="btn my-2 rounded-circle instagram-btn" data-bs-toggle="tooltip" data-bs-title="Siga nosso instagram!">
+      <img src="./img/instagram_logo.png" class="rounded-circle">
+    </a>
+
+    <a href="https://discord.gg/bDW2BnbZp7" target="_blank" rel="noopener noreferrer"
+      class="btn my-2 rounded-circle discord-btn" data-bs-toggle="tooltip" data-bs-title="Entre no nosso discord!">
+      <img src="./img/icon_clyde_white_RGB.png" class="social-img discord-img">
+    </a>
+  </aside>
+
+  <footer class="navbar bg-light d-flex justify-content-center py-3">
+    <div class="container-fluid row gap-3 gap-md-0">
+      <span class="col col-12 col-md-4 navbar-text d-flex justify-content-center justify-content-md-start">
+        <a href="https://www.instagram.com/codeitstudio/" target="_blank" rel="noopener noreferrer"
+          class="footer-social me-2">
+          <img src="./img/instagram_logo_footer32.png" class="">
+        </a>
+
+        <a href="https://discord.gg/bDW2BnbZp7" target="_blank" rel="noopener noreferrer" class="footer-social ms-2">
+          <img src="./img/discord_icon_footer64.png" class="">
+        </a>
+
+      </span>
+
+      <span class="col col-12 navbar-text text-center col-md-4">
+        &#169 2023 CodeIT Game Studio
+      </span>
+
+      <span class="col col-12 col-md-4 navbar-text d-flex justify-content-center justify-content-md-end">
+        <!-- Website by DuduRomeu -->
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+.studio-logo {
+    width: 128px;
+    height: 64;
+}
+
+.studio-logo img{
+    max-width: 100%;
+}
+
+.sound-img {
+    width: 2em;
+}
+
+.mute-on {
+    content: url(../img/icons/volume_off_black_24dp.svg);
+}
+
+.mute-off {
+    content: url(../img/icons/volume_up_black_24dp.svg);
+}
+
+.banner-bottom div, .footer-span {
+    width: 33.3%;
+}
+
+.banner-bottom-icon {
+    max-height: 20px;
+    filter: invert();
+}
+
+.video-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 100vw;
+}
+
+.video-bg {
+    margin-top: -224px;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.video-bg video {
+    display: block;
+    position: relative;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    margin: 0 auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.banner-foreground {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    padding-top: 224px;
+    z-index: 1;
+}
+
+.banner-call {
+    width: 100%;
+}
+
+
+.play-badge {
+    width: 100%;
+    max-width: 256px;
+}
+
+.inverted-svg {
+    filter: invert(1);
+}
+
+/* Social */
+
+.social-buttons {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 50;
+}
+
+.social-img {
+    object-fit: contain;
+    width: 32px;
+    height: 32px;
+}
+
+.instagram-btn {
+    padding: 0 !important;
+}
+
+.instagram-btn img {
+    width: 52px;
+    height: 52px;
+}
+
+.discord-btn {
+    padding: 9px;
+    background-color: #5865F2 !important;
+}
+
+.social-buttons .btn:hover .discord-img {
+    content: url("../img/Clyde_Happy.png");
+}
+
+@media only screen and (min-width: 768px) {
+    .instagram-btn img {
+        width: 71px;
+        height: 71px;
+    }
+
+    .discord-btn {
+        padding: 12px;
+    }
+
+    .social-img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Cards */
+
+.card-emphasys {
+    position: absolute;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.40);
+    transition: .25s all;
+    z-index: 3;
+}
+
+.card-emphasys:hover {
+    background-color: rgba(0, 0, 0, 0.66);
+}
+
+.card-emphasys-img {
+    width: 1.5em;
+    filter: invert();
+}
+
+.feature-card-img, .feature-card {
+    overflow: hidden;
+    max-height: 538px;
+    max-width: 1083px;
+}
+
+.feature-card-img img {
+    cursor: pointer;
+    width: 100%;
+    transition: .15s all;
+}
+
+.feature-card-img:hover img {
+    transform: scale(1.1);
+}
+
+.footer-social {
+    text-decoration: none;
+    width: 24px;
+    height: 24px;
+}
+
+.footer-social img {
+    object-fit: contain;
+    width: 24px;
+    height: 24px;
+    /* #707071 */
+}
+
+@media only screen and (min-width: 768px) { /* PC */
+    .banner-foreground {
+        padding-top: 113px;
+    }
+
+    .video-bg {
+        margin-top: -113px;
+    }
+}
