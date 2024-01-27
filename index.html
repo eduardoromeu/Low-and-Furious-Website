@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baixos de Quebrada - Mobile</title>
+    <link rel="icon" type="image/x-icon" href="img/icons/favicon.png">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/comp/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/bs-custom.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="overflow-hidden">
+        <nav class="navbar navbar-expand sticky-top bg-light justify-content-center">
+            <div class="container-fluid flex-wrap row gy-3 px-0 py-3">
+                <div class="d-flex col-12 col-md-3 justify-content-center justify-content-md-start">
+                    <a class="navbar-brand m-0 p-0" href="index.html">
+                        <div class=".studio-logo">
+                            <img src="img/codeit-512.png" alt="CodeIt Logo" class="studio-logo d-inline-block align-text-top">
+                        </div>
+                        <!-- Baixos de Quebrada -->
+                    </a>
+                </div>
+
+                <div class="navbar-nav col-12 col-md-6 align-items-center justify-content-around justify-content-md-center px-0">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="https://lowandfurious.codeitstudio.repl.co">Versão Steam</a>
+                    <a class="nav-link" href="https://www.central-mods.com.br/search/label/Baixos%20de%20Quebrada?&max-results=7">Blog</a>
+                    <a class="nav-link" href="https://play.google.com/store/apps/dev?id=5079271979673162323&hl=pt_BR&gl=US">Sobre</a>
+					<a class="nav-link" href="privacy.html">Privacidade</a>
+                </div>
+
+                <div class="navbar-nav col-12 col-md-3 align-items-center justify-content-around row-cols-3 gap-3 px-3">
+                    <a class="btn btn-light btn col-5" href="https://www.central-mods.com.br/2022/09/baixos-de-quebrada-novo-jogo-de-android.html">Informações</a>
+                    <a class="btn btn-success btn col-7" href="https://play.google.com/store/apps/details?id=com.CodeITGameStudio.BaixosDeQuebrada&hl=pt_BR&gl=US">Baixar</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="video-banner">
+            <div class="banner-foreground d-flex flex-column align-items-center justify-content-between">
+                <div class="video-controls w-100 d-flex justify-content-end">
+                    <button class="btn btn-light rounded-circle p-1 m-3" onclick="ToggleVideoMute()">
+                        <img src="img/icons/volume_up_black_24dp.svg" class="sound-img mute-on">
+                    </button>
+                </div>
+                <div class="banner-call d-flex flex-column align-items-center">
+                    <h1 class="text-light">SEU BAIXO DOS SONHOS</h1>
+                    <a href="#" class="w-50 text-center">
+                        <img class="play-badge" src="./img/google-play-badge.png" alt="Baixe na playstore">
+                    </a>
+                </div>
+                <div class="banner-bottom w-100 d-flex justify-content-center p-3">
+                    <div>
+                        <a href="https://youtu.be/zJjG1MIC6O8" target="_blank" class="link-light text-decoration-none text-nowrap border-bottom">
+                            Ver no youtube
+                            <img class="banner-bottom-icon" src="./img/icons/open_in_new_black_24dp.svg">
+                        </a>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center align-items-center btn-close-white">
+                        <img src="./img/icons/keyboard_double_arrow_down_black_24dp.svg">
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="video-bg">
+                <video autoplay muted loop id="gameplay-bg" poster="">
+                    <source src="./videos/preview1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section class="container-fluid game-contents py-3 px-2 px-md-3 gap-2 gap-md-3 d-flex flex-column flex-lg-row">
+
+                <div class="feature-card card p-0 d-flex align-items-center">
+                    <div class="card card-emphasys w-100 border-0 rounded-0 top-0 p-2 gap-2 d-flex flex-nowrap flex-row justify-content-center align-items-center">
+                        <div class="card-emphasys-img">
+                            <img class="w-100" src="./img/icons/build_black_24dp.svg" alt="garage tools">
+                        </div>
+                        <h5 class="card-title text-light m-0">Customização</h5>
+                    </div>
+                    
+                    <div class="carousel slide carousel-fade feature-card-img card-img-bottom" id="customization-images" data-bs-ride="carousel" data-bs-pause="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/gameplay/gameplay (18).png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/gameplay/gameplay (19).png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/gameplay/gameplay (20).png" class="d-block w-100">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-emphasys text-light text-center text-nowrap w-100 bottom-0 border-0 rounded-0 p-2">
+                        <h6>Além de uma variedade de veículos!</h6>
+                    </div>
+                </div>
+
+                <div class="feature-card card p-0 d-flex align-items-center">
+                    <div class="card card-emphasys w-100 border-0 rounded-0 top-0 p-2 gap-2 d-flex flex-nowrap flex-row justify-content-center align-items-center">
+                        <div class="card-emphasys-img">
+                            <img class="w-100" src="./img/icons/public_black_24dp.svg" alt="earth icon">
+                        </div>
+                        <h5 class="card-title text-light m-0">Mundo Aberto</h5>
+                    </div>
+                    
+                    <div class="carousel slide carousel-fade feature-card-img card-img-bottom" id="world-images" data-bs-ride="carousel" data-bs-pause="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/gameplay/gameplay (13).png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/gameplay/gameplay (21).png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/gameplay/gameplay (1).png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/gameplay/gameplay (12).png" class="d-block w-100">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-emphasys text-light text-center text-nowrap w-100 bottom-0 border-0 rounded-0 p-2">
+                        <h6>Ambientado no Brasil!</h6>
+                    </div>
+                </div>
+
+                <div class="feature-card card p-0 d-flex align-items-center">
+                    <div class="card card-emphasys w-100 border-0 rounded-0 top-0 p-2 gap-2 d-flex flex-nowrap flex-row justify-content-center align-items-center">
+                        <div class="card-emphasys-img">
+                            <img class="w-100" src="./img/icons/paid_black_24dp.svg" alt="coin">
+                        </div>
+                        <h5 class="card-title text-light m-0">Serviços</h5>
+                    </div>
+                    
+                    <div class="carousel slide carousel-fade feature-card-img card-img-bottom" id="services-images" data-bs-ride="carousel" data-bs-pause="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/gameplay/gameplay (11).png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/gameplay/gameplay (16).png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/gameplay/gameplay (17).png" class="d-block w-100">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-emphasys text-light text-center text-nowrap w-100 bottom-0 border-0 rounded-0 p-2">
+                        <h6>Ganhe e gaste do jeito que quiser!</h6>
+                    </div>
+                </div>
+        </section>
+
+        <section class="game-setting">
+            
+        </section>
+    </main>
+
+    <aside class="social-buttons m-4 d-flex flex-column justify-content-around">
+        <a 
+            href="https://www.instagram.com/codeitstudio/"
+            target="_blank" rel="noopener noreferrer"
+            class="btn my-2 rounded-circle instagram-btn"
+            data-bs-toggle="tooltip" data-bs-title="Siga nosso instagram!"
+        >
+            <img src="./img/instagram-logo-white.png" class="social-img">
+        </a>
+        
+        <a 
+            href="https://discord.gg/bDW2BnbZp7"
+            target="_blank" rel="noopener noreferrer"
+            class="btn btn-blurple my-2 rounded-circle"
+            data-bs-toggle="tooltip" data-bs-title="Entre no nosso discord!"
+        >
+            <img src="./img/icon_clyde_white_RGB.png" class="social-img discord-img">
+        </a>
+    </aside>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

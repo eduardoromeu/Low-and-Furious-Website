@@ -1,0 +1,15 @@
+{
+  "name": "site-baixos-da-quebrada",
+  "version": "1.0.0",
+  "description": "Site do jogo Baixos da Quebrada",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-style": "sass --watch ./scss/custom.scss:./css/bs-custom.css"
+  },
+  "author": "eduardoromeu",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}
