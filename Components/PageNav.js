@@ -27,8 +27,8 @@ class PageNav extends HTMLElement {
       <div class="container-fluid flex-wrap row gy-3 px-3 py-3">
         <div class="d-flex col-12 col-md-3 justify-content-center justify-content-md-start">
           <a class="navbar-brand m-0 p-0" href="index.html">
-            <div class="studio-logo">
-              <img src="img/codeit_logo_${theme == "dark" ? "white" : "black"}_512.png" alt="CodeIt Logo"
+            <div class="studio-logo h-25">
+              <img src="img/codeit_logo_${theme == "dark" ? "white" : "black"}_128.png" alt="CodeIt Logo"
                 class="studio-logo d-inline-block align-text-top">
             </div>
           </a>
