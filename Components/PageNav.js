@@ -44,7 +44,8 @@ class PageNav extends HTMLElement {
         </div>
 
         <div class="navbar-nav col-12 col-md-3 align-items-center justify-content-around row-cols-3 gap-3 px-3">
-          <a class="btn btn-light btn col-5" href="#">Steam</a>
+          <img src="img/icons/Android.png" alt="Steam Icon" style="width: 20px; height: 20px; margin-right: 5px;">
+          <a class="btn btn-light btn col-5" href="https://eduardoromeu.github.io/SiteBaixosDeQuebrada/">Android</a>
           <a class="btn btn-success btn col-7" href="https://store.steampowered.com/app/2408060/Low_and_Furious/">+
             Lista de desejo</a>
         </div>
