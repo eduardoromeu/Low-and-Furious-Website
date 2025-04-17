@@ -41,6 +41,7 @@ class PageNav extends HTMLElement {
           <a class="nav-link border-bottom ${pageIndex == 2 ? "border-primary" : `border-${theme}`}"
             href="https://www.central-mods.com.br/search/label/Baixos%20de%20Quebrada?&max-results=7">Blog</a>
           <a class="nav-link border-bottom ${pageIndex == 3 ? "border-primary" : `border-${theme}`}" href="privacy.html">Privacidade</a>
+          <a class="nav-link border-bottom ${pageIndex == 4 ? "border-primary" : `border-${theme}`}" href="manual.html">Game Manual</a>
         </div>
 
         <div class="navbar-nav col-12 col-md-3 align-items-center justify-content-around row-cols-3 gap-3 px-3">

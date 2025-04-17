@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manual - Low and Furious</title>
+  <link rel="icon" type="image/x-icon" href="img/icons/favicon.png">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    function toggleLanguage(lang) {
+      const pt = document.querySelectorAll('.lang-pt');
+      const en = document.querySelectorAll('.lang-en');
+      pt.forEach(el => el.style.display = lang === 'pt' ? 'block' : 'none');
+      en.forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+    }
+  </script>
+</head>
+
+<body onload="toggleLanguage('pt')" id="topo">
+  <main class="container py-5">
+    <header class="mb-4 text-center">
+      <div class="lang-pt">
+        <img src="img/logo-pt.png" alt="Baixos de Quebrada" class="img-fluid mb-3" style="max-width: 300px;">
+        <h1 class="display-5 fw-bold">Manual do Jogo</h1>
+        <p class="lead">Tudo que você precisa saber para dominar o Baixos de Quebrada</p>
+      </div>
+      <div class="lang-en">
+        <img src="img/logo-en.png" alt="Low and Furious" class="img-fluid mb-3" style="max-width: 300px;">
+        <h1 class="display-5 fw-bold">Game Manual</h1>
+        <p class="lead">Everything you need to know to master Low and Furious</p>
+      </div>
+      <div class="mt-3">
+        <button class="btn btn-sm btn-outline-primary me-2" onclick="toggleLanguage('pt')">Português</button>
+        <button class="btn btn-sm btn-outline-secondary" onclick="toggleLanguage('en')">English</button>
+      </div>
+    </header>
+
+    <!-- Seção: Controles Avançados -->
+    <section class="mb-5">
+  <h2 class="h4 border-bottom pb-2">
+    <span class="lang-pt">📘 Manual Rápido — <em>Baixos de Quebrada</em></span>
+    <span class="lang-en">📘 Quick Guide — <em>Low and Furious</em></span>
+  </h2>
+      
+      <!-- Portuguese Version -->
+      <div class="lang-pt">
+        <h5 class="mt-4">📱 Menu e Interações</h5>
+        <ul>
+          <li><strong>Abrir/fechar - Telefone:</strong> ESC (Keyboard) / Select (Gamepad)</li>
+          <li><strong>Interagir:</strong> Enter (Keyboard) / Start (Gamepad)</li>
+          <li><strong>Abrir/fechar menu radial:</strong> Tab (Keyboard) / D-Pad/Down (Gamepad)</li>
+          <li><strong>Fechar/voltar do telefone:</strong> Backspace (Keyboard)</li>
+          <li><strong>Ativar/ocultar Cursor do mouse:</strong> Left Alt (Keyboard)</li>
+          <li><strong>Ativar/desativar cursor virtual:</strong> Button South (Gamepad)</li>
+          <li><strong>Mover cursor virtual:</strong> Joystick (direcional) (Gamepad)</li>
+        </ul>
+
+        <h5 class="mt-4">🔄 Câmera</h5>
+        <ul>
+          <li><strong>Trocar câmera:</strong> C (Keyboard) / Button North (Gamepad)</li>
+          <li><strong>Câmera traseira:</strong> V (Keyboard) / Right Stick Press (Gamepad)</li>
+          <li><strong>Controle livre da câmera (Interface Aberta):</strong> Right Button (Mouse) / Right Stick (Gamepad)</li>
+          <li><strong>Resetar rotação da câmera:</strong> Middle Button (Scroll Mouse) / Right Stick Press (Gamepad)</li>
+        </ul>
+
+        <h5 class="mt-4">🚗 Direção e Movimento</h5>
+        <ul>
+          <li><strong>Acelerar:</strong> W (Keyboard) / Right Trigger (Gamepad)</li>
+          <li><strong>Frear:</strong> S (Keyboard) / Left Trigger (Gamepad)</li>
+          <li><strong>Freio de mão:</strong> Space (Keyboard) / Button East (Gamepad)</li>
+          <li><strong>Virar (Steering):</strong> A / D (Keyboard) / Left Stick (Gamepad)</li>
+          <li><strong>Girar (Roll):</strong> 8 / 2 (Keyboard) / Left Stick Up/Down (Gamepad)</li>
+          <li><strong>Rodar (Spin):</strong> 4 / 6 (Keyboard) / Left Stick Left/Right (Gamepad)</li>
+        </ul>
+
+        <h5 class="mt-4">⚙️ Controles do Carro</h5>
+        <ul>
+          <li><strong>Subir marcha:</strong> Right Shift (Keyboard) / Right Shoulder (Gamepad)</li>
+          <li><strong>Reduzir marcha:</strong> Right Control (Keyboard) / Left Shoulder (Gamepad)</li>
+          <!--<li><strong>Reiniciar veículo:</strong> R (Keyboard) / Button West (Gamepad)</li>-->
+          <li><strong>Pitch (cima/baixo):</strong> Numpad 2 / Numpad 8</li>
+          <li><strong>Yaw (esquerda/direita):</strong> Numpad 4 / Numpad 6</li>
+        </ul>
+
+        <h5 class="mt-4">🔊 Ações de Peças e Acessórios</h5>
+        <ul>
+          
+          <li><strong>Modo alerta (Necessário Giroflex):</strong> M (Keyboard)</li>
+          <li><strong>Sirene (Necessário Giroflex):</strong> N (Keyboard)</li>
+          <li><strong>Subir/Descer Antena de rádio (Necessário antena antiga):</strong> T (Keyboard)</li>
+          <li><strong>Ligar/desligar Vinheta (Necessário Caixa de som Externa):</strong> 3 (Keyboard)</li>
+          <li><strong>Subir Suspensão (Necessário Hidraulica):</strong> = (Keyboard)</li>
+          <li><strong>Descer Suspensão (Necessário Hidraulica):</strong> - (Keyboard)</li>
+          <li><strong>Kit de reparo (Necessário Caixa de Ferramenta):</strong> 1 (Keyboard)</li>
+        </ul>
+
+        <h5 class="mt-4">🚘 Ações Específicas do Veículo</h5>
+        <ul>
+          <li><strong>Abrir porta-malas:</strong> P (Keyboard)</li>
+          <!--<li><strong>Abrir portas:</strong> F (Keyboard)</li>-->
+          <li><strong>Ligar/desligar motor:</strong> G (Keyboard) / D-Pad/Up (Gamepad)</li>
+          <li><strong>Buzina:</strong> H (Keyboard) / Left Stick Press (Gamepad)</li>
+          <li><strong>Ligar/desligar limpador:</strong> L (Keyboard)</li>
+          <li><strong>Velocidade do limpador:</strong> K (Keyboard)</li>
+          <li><strong>Seta esquerda:</strong> Left Arrow (Keyboard) / D-Pad/Left (Gamepad)</li>
+          <li><strong>Seta direita:</strong> Right Arrow (Keyboard) / D-Pad/Right (Gamepad)</li>
+          <li><strong>Pisca alerta:</strong> I (Keyboard)</li>
+          <li><strong>Farol (milha):</strong> Y (Keyboard)</li>
+          <li><strong>Luzes extras:</strong> U (Keyboard)</li>
+          <li><strong>Faróis retráteis:</strong> O (Keyboard)</li>
+          <!--<li><strong>Capô:</strong> 0 (Keyboard)</li>-->
+          <li><strong>Ativar 4x4:</strong> 4 (Keyboard)</li>
+        </ul>
+      </div>
+
+      <!-- English Version -->
+        <div class="lang-en">
+          <h5 class="mt-4">📱 Menu and Interactions</h5>
+          <ul>
+            <li><strong>Open/close - Phone:</strong> ESC (Keyboard) / Select (Gamepad)</li>
+            <li><strong>Interact:</strong> Enter (Keyboard) / Start (Gamepad)</li>
+            <li><strong>Open/close radial menu:</strong> Tab (Keyboard) / D-Pad/Down (Gamepad)</li>
+            <li><strong>Close/return from phone:</strong> Backspace (Keyboard)</li>
+            <li><strong>Enable/hide mouse cursor:</strong> Left Alt (Keyboard)</li>
+            <li><strong>Enable/disable virtual cursor:</strong> Button South (Gamepad)</li>
+            <li><strong>Move virtual cursor:</strong> Joystick (directional) (Gamepad)</li>
+          </ul>
+
+          <h5 class="mt-4">🔄 Camera</h5>
+          <ul>
+            <li><strong>Change camera:</strong> C (Keyboard) / Button North (Gamepad)</li>
+            <li><strong>Rear camera:</strong> V (Keyboard) / Right Stick Press (Gamepad)</li>
+            <li><strong>Free camera control (Open Interface):</strong> Right Button (Mouse) / Right Stick (Gamepad)</li>
+            <li><strong>Reset camera rotation:</strong> Middle Button (Scroll Mouse) / Right Stick Press (Gamepad)</li>
+          </ul>
+
+          <h5 class="mt-4">🚗 Driving and Movement</h5>
+          <ul>
+            <li><strong>Accelerate:</strong> W (Keyboard) / Right Trigger (Gamepad)</li>
+            <li><strong>Brake:</strong> S (Keyboard) / Left Trigger (Gamepad)</li>
+            <li><strong>Handbrake:</strong> Space (Keyboard) / Button East (Gamepad)</li>
+            <li><strong>Steering:</strong> A / D (Keyboard) / Left Stick (Gamepad)</li>
+            <li><strong>Roll:</strong> 8 / 2 (Keyboard) / Left Stick Up/Down (Gamepad)</li>
+            <li><strong>Spin:</strong> 4 / 6 (Keyboard) / Left Stick Left/Right (Gamepad)</li>
+          </ul>
+
+          <h5 class="mt-4">⚙️ Car Controls</h5>
+          <ul>
+            <li><strong>Shift up:</strong> Right Shift (Keyboard) / Right Shoulder (Gamepad)</li>
+            <li><strong>Shift down:</strong> Right Control (Keyboard) / Left Shoulder (Gamepad)</li>
+            <!--<li><strong>Reset vehicle:</strong> R (Keyboard) / Button West (Gamepad)</li>-->
+            <li><strong>Pitch (up/down):</strong> Numpad 2 / Numpad 8</li>
+            <li><strong>Yaw (left/right):</strong> Numpad 4 / Numpad 6</li>
+          </ul>
+
+          <h5 class="mt-4">🔊 Parts and Accessories Actions</h5>
+          <ul>
+            <li><strong>Alert mode (Requires Beacon Light):</strong> M (Keyboard)</li>
+            <li><strong>Siren (Requires Beacon Light):</strong> N (Keyboard)</li>
+            <li><strong>Raise/Lower Radio Antenna (Requires old antenna):</strong> T (Keyboard)</li>
+            <li><strong>Toggle Vignette (Requires External Sound Box):</strong> 3 (Keyboard)</li>
+            <li><strong>Raise Suspension (Requires Hydraulics):</strong> = (Keyboard)</li>
+            <li><strong>Lower Suspension (Requires Hydraulics):</strong> - (Keyboard)</li>
+            <li><strong>Repair kit (Requires Toolbox):</strong> 1 (Keyboard)</li>
+          </ul>
+
+          <h5 class="mt-4">🚘 Vehicle Specific Actions</h5>
+          <ul>
+            <li><strong>Open trunk:</strong> P (Keyboard)</li>
+            <!--<li><strong>Open doors:</strong> F (Keyboard)</li>-->
+            <li><strong>Toggle engine:</strong> G (Keyboard) / D-Pad/Up (Gamepad)</li>
+            <li><strong>Horn:</strong> H (Keyboard) / Left Stick Press (Gamepad)</li>
+            <li><strong>Toggle wipers:</strong> L (Keyboard)</li>
+            <li><strong>Wiper speed:</strong> K (Keyboard)</li>
+            <li><strong>Left turn signal:</strong> Left Arrow (Keyboard) / D-Pad/Left (Gamepad)</li>
+            <li><strong>Right turn signal:</strong> Right Arrow (Keyboard) / D-Pad/Right (Gamepad)</li>
+            <li><strong>Hazard lights:</strong> I (Keyboard)</li>
+            <li><strong>Headlight (fog):</strong> Y (Keyboard)</li>
+            <li><strong>Extra lights:</strong> U (Keyboard)</li>
+            <li><strong>Retractable headlights:</strong> O (Keyboard)</li>
+            <!--<li><strong>Hood:</strong> 0 (Keyboard)</li>-->
+            <li><strong>Activate 4x4:</strong> 4 (Keyboard)</li>
+          </ul>
+        </div>
+	</section>
+
+    <!-- Seção: Mecânicas -->
+    <section class="mb-5">
+      <h2 class="h4 border-bottom pb-2">
+        <span class="lang-pt">Mecânicas Importantes</span>
+        <span class="lang-en">Important Mechanics</span>
+      </h2>
+  
+      <!-- Portuguese Version -->
+      <div class="lang-pt">
+        <h5 class="mt-4">🏪 Lojas e Serviços</h5>
+        <ul>
+          <li><strong>Oficina:</strong> Peças mecânicas, motores, performance, suspensão, rodas</li>
+          <li><strong>Pintura:</strong> Visual, decalques e película de vidro</li>
+          <li><strong>Tuning:</strong>  rodas personalizadas, escapamentos, spoilers, acessórios tuning</li>
+          <li><strong>Som:</strong> Subwoofers, som automotivo, acessórios</li>
+          <li><strong>Elétrica:</strong> Neon, luzes especiais, acessórios elétricos</li>
+          <li><strong>Betran:</strong> Emplacamento, identidade do jogador</li>
+          <li><strong>Concessionária:</strong> Compra, venda de carros, personalização de edição do veículo</li>
+          <li><strong>Fábrica de Maconha:</strong> Acesso livre, sem função ativa - Futuro negócio</li>
+        </ul>
+
+        <h5 class="mt-4">🚨 Sistema de Polícia</h5>
+        <ul>
+          <li>Acima de 60 km/h = Perseguição</li>
+          <li>Fuga bem-sucedida = +XP</li>
+          <li>Captura = -XP e dinheiro</li>
+          <li>Indicação: Aparece um indicador, se está sendo preso ou fugindo</li>
+          <li>A polícia pode aparecer mais em certas corridas</li>
+          <li>A polícia aparece parada em vários pontos do mapa de forma aleatória</li>
+        </ul>
+
+        <h5 class="mt-4">📱 Celular no Jogo</h5>
+        <ul>
+          <li><strong>Acessar Configurações:</strong> Ajustar áudio, gráficos, idioma...</li>
+          <li><strong>Acessar Reboque:</strong> Quando ficar preso ou precisar ir para oficina por pane</li>
+          <li><strong>Tocar Músicas:</strong> Player com faixas exclusivas</li>
+          <li><strong>Ver Banco:</strong> Informação do XP em geral, dinheiro e LVL</li>
+          <li><strong>Ver Contatos:</strong> Interação com NPCs e missões (Ainda não implementado)</li>
+          <li><strong>Ver Notificações:</strong> Ver todas as notificações recebidas</li>
+          <li><strong>Ver Mapa:</strong> Localização, rotas, pontos de interesse (Ainda não implementado)</li>
+          <li><strong>Ver Internet:</strong> Atividades, compras (Ainda não implementado)</li>
+          <li><strong>Usar Câmera:</strong> Tirar Print da Steam</li>
+          <li><strong>Ver Mensagens:</strong> Missões, mensagens, atualizações (ainda não implementado)</li>
+          <li><strong>Viagem Rápida:</strong> Viagem rápida para casas compradas (ainda não implementado)</li>
+          <li><strong>Ver Clima:</strong> Saber o clima atual (ainda não implementado)</li>
+        </ul>
+
+        <h5 class="mt-4">📱 Outros Sistemas</h5>
+        <ul>
+          <li><strong>Gasolina:</strong> É necessário ficar de olho na gasolina para não abacar</li>
+          <li><strong>Posto de gasolina:</strong> Existem 2 postos de gasolina no mapa (um na área perto da oficina e outro na zona rural)</li>
+          <li><strong>Clima:</strong> Chuva afeta a aderência do carro</li>
+          <li><strong>Pneu:</strong> Pneus tem impacto no terreno, caso queira fazer um carro offroad compre um pneu adequado</li>
+          <li><strong>Pneu furado:</strong> Pode ter coisas no cenário que fure o pneu, cuidado</li>
+          <li><strong>Freio:</strong> Frear por muito tempo em velocidade alta pode fazer o mesmo esquentar e perde um pouco a eficiência</li>
+          <li><strong>Sons automotivos:</strong> Caixas de sons vibram diferente e tem impacto com porta mala fechado</li>
+          <li><strong>Spoilers:</strong> Colocar spoilers pode afetar um pouco a aderência do carro</li>
+          <li><strong>Nitro:</strong> Nitro pode aumentar um pouco a potência no seu uso</li>
+          <li><strong>GNV:</strong> Você perde potência, mas favorece no gasto da gasolina</li>
+          <li><strong>Modulo:</strong> Com ele instalado o seu som terá mais graves</li>
+          <li><strong>GPS:</strong> Na compra dele você ativa o mini mapa na tela (você ganha o gps no primeiro carro, mas precisa por nos demais por conta)</li>
+          <li><strong>Filtro de ar:</strong> Você pode melhorar o filtro de ar ou por um externo possíbilitando durar mais tempo na água</li>
+        </ul>
+      </div>
+  
+      <!-- English Version -->
+     <div class="lang-en">
+      <h5 class="mt-4">🏪 Shops and Services</h5>
+      <ul>
+        <li><strong>Workshop:</strong> Mechanical parts, engines, performance, suspension, wheels</li>
+        <li><strong>Paint Shop:</strong> Visual customization, decals and window tinting</li>
+        <li><strong>Tuning:</strong> Custom wheels, exhausts, spoilers, tuning accessories</li>
+        <li><strong>Sound Shop:</strong> Subwoofers, car audio, accessories</li>
+        <li><strong>Electrical Shop:</strong> Neon, special lights, electrical accessories</li>
+        <li><strong>Betran:</strong> Vehicle registration, player identity</li>
+        <li><strong>Dealership:</strong> Buying, selling cars, vehicle edition customization</li>
+        <li><strong>Cannabis Factory:</strong> Free access, no active function - Future business</li>
+      </ul>
+
+      <h5 class="mt-4">🚨 Police System</h5>
+      <ul>
+        <li>Above 60 km/h = Chase</li>
+        <li>Successful escape = +XP</li>
+        <li>Capture = -XP and money</li>
+        <li>Indication: An indicator appears showing if you're being arrested or escaping</li>
+        <li>Police may appear more frequently in certain races</li>
+        <li>Police appear stationed at various points on the map randomly</li>
+      </ul>
+
+      <h5 class="mt-4">📱 In-Game Phone</h5>
+      <ul>
+        <li><strong>Access Settings:</strong> Adjust audio, graphics, language...</li>
+        <li><strong>Access Towing:</strong> When stuck or need to go to workshop due to breakdown</li>
+        <li><strong>Play Music:</strong> Player with exclusive tracks</li>
+        <li><strong>View Bank:</strong> General XP information, money and LVL</li>
+        <li><strong>View Contacts:</strong> Interaction with NPCs and missions (Not yet implemented)</li>
+        <li><strong>View Notifications:</strong> See all received notifications</li>
+        <li><strong>View Map:</strong> Location, routes, points of interest (Not yet implemented)</li>
+        <li><strong>Browse Internet:</strong> Activities, shopping (Not yet implemented)</li>
+        <li><strong>Use Camera:</strong> Take Steam Screenshot</li>
+        <li><strong>View Messages:</strong> Missions, messages, updates (Not yet implemented)</li>
+        <li><strong>Fast Travel:</strong> Quick travel to purchased houses (Not yet implemented)</li>
+        <li><strong>View Weather:</strong> Know the current weather (Not yet implemented)</li>
+      </ul>
+
+      <h5 class="mt-4">📱 Other Systems</h5>
+      <ul>
+        <li><strong>Fuel:</strong> It's necessary to keep an eye on fuel to avoid running out</li>
+        <li><strong>Gas station:</strong> There are 2 gas stations on the map (one in the area near the workshop and another in the rural zone)</li>
+        <li><strong>Weather:</strong> Rain affects car grip</li>
+        <li><strong>Tires:</strong> Tires have an impact on terrain, if you want to make an offroad car buy a suitable tire</li>
+        <li><strong>Flat tire:</strong> There may be things in the scenery that puncture the tire, be careful</li>
+        <li><strong>Brakes:</strong> Braking for too long at high speed can cause them to heat up and lose some efficiency</li>
+        <li><strong>Car audio:</strong> Sound boxes vibrate differently and have impact with closed trunk</li>
+        <li><strong>Spoilers:</strong> Adding spoilers can slightly affect the car's grip</li>
+        <li><strong>Nitro:</strong> Nitro can slightly increase power when used</li>
+        <li><strong>CNG:</strong> You lose power, but it's more economical on fuel consumption</li>
+        <li><strong>Module:</strong> With it installed your sound system will have more bass</li>
+        <li><strong>GPS:</strong> When purchased, it activates the mini map on screen (you get GPS with your first car, but need to install it yourself in others)</li>
+        <li><strong>Air filter:</strong> You can improve the air filter or add an external one allowing longer time in water</li>
+      </ul>
+    </div>
+
+      <img src="img/manual/mecanicas.png" class="img-fluid rounded shadow mt-4" alt="Imagem das mecânicas">
+    </section>
+
+    <!-- Seção: Progresso -->
+    <section class="mb-5">
+      <h2 class="h4 border-bottom pb-2">
+        <span class="lang-pt">Progresso</span>
+        <span class="lang-en">Progression</span>
+      </h2>
+  
+      <!-- Portuguese Version -->
+      <div class="lang-pt">
+        <p>
+          Seu progresso no jogo é salvo automaticamente após sair de interior ou em eventos importantes.
+        </p>
+        <ul>
+          <li>Nível 1-10: Iniciante - Acesso a carros básicos e customizações simples</li>
+          <li>Nível 11-20: Intermediário - Desbloqueio de áreas novas e peças especiais</li>
+          <li>Nível 25: Profissional - Acesso a todos os conteúdos e eventos exclusivos</li>
+        </ul>
+      </div>
+  
+      <!-- English Version -->
+      <div class="lang-en">
+        <p>
+          Your progress in the game is automatically saved after each important event.
+        </p>
+        <ul>
+          <li>Level 1-10: Beginner - Access to basic cars and simple customizations</li>
+          <li>Level 11-20: Intermediate - Unlock new areas and special parts</li>
+          <li>Level 25: Professional - Access to all content and exclusive events</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Seção: Peças e Customização -->
+    <section class="mb-5">
+      <h2 class="h4 border-bottom pb-2">
+        <span class="lang-pt">Peças e Customização</span>
+        <span class="lang-en">Parts and Customization</span>
+      </h2>
+  
+      <!-- Portuguese Version -->
+      <div class="lang-pt">
+        <h5 class="mt-4">🔧 Motor e Performance</h5>
+        <ul>
+          <li><strong>Motores:</strong> Melhoria na potência^do motor</li>
+        </ul>
+
+        <h5 class="mt-4">🛞 Suspensão e Rodas</h5>
+        <ul>
+          <li><strong>Suspensão a ar:</strong> Permite ajuste de altura em tempo real</li>
+        </ul>
+
+        <h5 class="mt-4">🎨 Visual e Estética</h5>
+        <ul>
+          <li><strong>Pinturas:</strong> Metálica, fosca, cromada</li>
+          <li><strong>Neon:</strong> Cores</li>
+          <li><strong>Adesivos:</strong> Vidros </li>
+        </ul>
+      </div>
+  
+      <!-- English Version -->
+      <div class="lang-en">
+        <h5 class="mt-4">🔧 Engine and Performance</h5>
+        <ul>
+          <li><strong>Engines:</strong> power</li>
+        </ul>
+
+        <h5 class="mt-4">🛞 Suspension and Wheels</h5>
+        <ul>
+          <li><strong>Air suspension:</strong> Allows real-time height adjustment</li>
+        </ul>
+
+        <h5 class="mt-4">🎨 Visual and Aesthetics</h5>
+        <ul>
+          <li><strong>Body kits:</strong> Widebody, JDM, Euro style - change appearance and aerodynamics</li>
+          <li><strong>Paints:</strong> Metallic, matte, chrome</li>
+          <li><strong>Neon:</strong> Colors</li>
+          <li><strong>Decals:</strong> Windows</li>
+        </ul>
+      </div>
+  
+      <div class="row g-3 mt-3">
+        <div class="col-6 col-md-4">
+          <img src="img/manual/motor.png" class="img-fluid rounded shadow" alt="Motor customizado">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="img/manual/rodas.png" class="img-fluid rounded shadow" alt="Rodas personalizadas">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="img/manual/sound.png" class="img-fluid rounded shadow" alt="Body kit instalado">
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Como Jogar -->
+    <section class="mb-5">
+      <h2 class="h4 border-bottom pb-2">
+        <span class="lang-pt">Como Jogar</span>
+        <span class="lang-en">How to Play</span>
+      </h2>
+      
+      <!-- Portuguese Version -->
+      <div class="lang-pt">
+        <p>
+          Explore o mundo aberto, customize seu carro nas lojas, participe de corridas e eventos,
+          ganhe dinheiro e respeito na quebrada. 
+        </p>
+        <p>
+          Ao completar missões e desafios, você desbloqueia novas peças, áreas e conquistas.
+        </p>
+      </div>
+      
+      <!-- English Version -->
+      <div class="lang-en">
+        <p>
+          Explore the open world, customize your car in shops, participate in races and events,
+          earn money and respect in the neighborhood.
+        </p>
+        <p>
+          By completing missions and challenges, you unlock new parts, areas, and achievements.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção: Imagens -->
+    <section class="mb-5">
+      <h2 class="h4 border-bottom pb-2">
+        <span class="lang-pt">Galeria</span>
+        <span class="lang-en">Gallery</span>
+      </h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-4">
+          <img src="img/manual/loja.png" class="img-fluid rounded shadow" alt="Loja de peças">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="img/manual/corrida.png" class="img-fluid rounded shadow" alt="Corrida noturna">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="img/manual/missao.png" class="img-fluid rounded shadow" alt="Missão em favela">
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Dicas -->
+    <section class="mb-5">
+      <h2 class="h4 border-bottom pb-2">
+        <span class="lang-pt">Dicas Rápidas</span>
+        <span class="lang-en">Quick Tips</span>
+      </h2>
+      
+      <!-- Portuguese Version -->
+      <div class="lang-pt">
+        <ul>
+          <li>Ganhe XP e dinheiro correndo e prestando serviços.</li>
+          <li>Evite passar de 60km/h perto da polícia.</li>
+          <li>Alterne entre dia/noite dormindo em sua casa</li>
+          <li>A "fera" só aparece em dias específicos. Fique de olho!</li>
+          <li>Atualize seu carro com peças que afetam o som e o desempenho.</li>
+          <li>Use o celular para acessar o mapa, clima e outras funções.</li>
+          <li>Se o carro der Pane vai indicar um icon no hud de motor na cor vermelha (use o kit ou use o reboque para oficina e concerte o carro)</li>
+        </ul>
+      </div>
+      
+      <!-- English Version -->
+      <div class="lang-en">
+        <ul>
+          <li>Earn XP and money by racing and providing services.</li>
+          <li>Avoid going over 60km/h near the police.</li>
+          <li>Alternate between day/night sleeping at your home</li>
+          <li>The "beast" only appears on specific days. Keep an eye out!</li>
+          <li>Upgrade your car with parts that affect sound and performance.</li>
+          <li>Use your phone to access the map, weather, and other functions.</li>
+          <li>If the car breaks down, it will indicate an icon on the engine HUD in red (use the kit or use the tow truck to the garage and fix the car)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Seção: Suporte -->
+    <section class="mb-5">
+      <h2 class="h4 border-bottom pb-2">
+        <span class="lang-pt">Suporte</span>
+        <span class="lang-en">Support</span>
+      </h2>
+  
+      <!-- Portuguese Version -->
+      <div class="lang-pt">
+        <p>
+          Encontrou algum problema no jogo? Entre em contato com nossa equipe de suporte:
+        </p>
+        <ul>
+          <li>Email: contact.bdq22@gmail.com</li>
+          <li>Discord: https://discord.gg/bDW2BnbZp7</li>
+        </ul>
+      </div>
+  
+      <!-- English Version -->
+      <div class="lang-en">
+        <p>
+          Found an issue with the game? Contact our support team:
+        </p>
+        <ul>
+          <li>Email: contact.bdq22@gmail.com</li>
+          <li>Discord: https://discord.gg/bDW2BnbZp7</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Voltar ou Navegar -->
+    <div class="text-center">
+      <a href="index.html" class="btn btn-primary me-2">
+        <span class="lang-pt">Voltar ao Início</span>
+        <span class="lang-en">Back to Home</span>
+      </a>
+      <a href="#topo" class="btn btn-outline-secondary">
+        <span class="lang-pt">Voltar ao Topo</span>
+        <span class="lang-en">Back to Top</span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="text-center mt-5 mb-3 text-muted small">
+    &copy; 2025 CodeIT Game Studio - Todos os direitos reservados
+  </footer>
+</body>
+
+</html>
