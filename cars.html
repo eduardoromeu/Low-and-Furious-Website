@@ -1,17 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Low And Furious!</title>
-    <!-- Bootstrap CDN -->
+    <title>Conteúdo — Low and Furious / Baixos de Quebrada</title>
+    <link rel="icon" type="image/x-icon" href="img/icons/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/laf-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/content.css">
+    <script src="js/i18n.js"></script>
     <script src="Components/PageNav.js" defer></script>
 </head>
-<body data-bs-theme="dark">
+<body class="laf-dark" data-bs-theme="dark">
     <page-nav theme="dark" current-page="1"></page-nav>
 
+    <main class="container content-page py-4 pb-5">
+        <header class="content-hero">
+            <h1 class="lang-pt">Low and Furious</h1>
+            <h1 class="lang-en">Low and Furious</h1>
+            <p class="lead lang-pt">
+                Baixos de Quebrada — o jogo de carro brasileiro que a gente está construindo.
+                Mundo aberto, tunagem pesada e Acesso Antecipado na Steam.
+            </p>
+            <p class="lead lang-en">
+                Baixos de Quebrada — the Brazilian car game we’re building.
+                Open world, heavy tuning, and Early Access on Steam.
+            </p>
+            <div class="content-cta">
+                <a class="primary" href="https://store.steampowered.com/app/2408060/Low_and_Furious/">
+                    <span class="lang-pt">Jogar na Steam</span>
+                    <span class="lang-en">Play on Steam</span>
+                </a>
+                <a class="ghost" href="manual.html">
+                    <span class="lang-pt">Manual do jogo</span>
+                    <span class="lang-en">Game manual</span>
+                </a>
+            </div>
+        </header>
+
+        <section class="content-section">
+            <h2 class="lang-pt">O que a gente está fazendo</h2>
+            <h2 class="lang-en">What we’re building</h2>
+
+            <div class="lang-pt">
+                <p>
+                    Somos a <strong>CodeIT Game Studio</strong>. Nosso jogo é sobre baixo, som e quebrada:
+                    um mapa inspirado no Brasil onde você monta o carro do jeito que quiser e vive a rotina da cidade.
+                </p>
+                <p>
+                    A gente quer que você sinta o carro — hidráulica, neon, caixa no porta-malas, racha, polícia no encalço.
+                    Tem empregos (táxi, entrega), corridas, missões, fábrica, lojas de peça e um celular com mapa, banco, clima e playlist BDQ Trax.
+                    Tudo single-player, em constante evolução no Acesso Antecipado.
+                </p>
+            </div>
+
+            <div class="lang-en">
+                <p>
+                    We’re <strong>CodeIT Game Studio</strong>. Our game is about lowriders, loud sound systems, and the streets:
+                    a Brazil-inspired map where you build the car you want and live the city loop.
+                </p>
+                <p>
+                    We want you to feel the car — hydraulics, neon, trunk speakers, street races, cops on your tail.
+                    There are jobs (taxi, delivery), races, missions, a factory business, parts shops, and a phone with map, bank, weather, and BDQ Trax.
+                    Single-player, still growing in Early Access.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="lang-pt">No jogo tem</h2>
+            <h2 class="lang-en">In the game</h2>
+
+            <div class="feature-pill-grid">
+                <article class="feature-pill">
+                    <h3 class="lang-pt">Mundo aberto</h3>
+                    <h3 class="lang-en">Open world</h3>
+                    <p class="lang-pt">Cidade, interior, lojas, posto, lava-jato — e GPS no celular.</p>
+                    <p class="lang-en">City, countryside, shops, gas station, car wash — plus GPS on the phone.</p>
+                </article>
+                <article class="feature-pill">
+                    <h3 class="lang-pt">Tunagem de verdade</h3>
+                    <h3 class="lang-en">Real tuning</h3>
+                    <p class="lang-pt">Oficina, pintura, som, elétrica, hidráulica, neon… performance e estilo.</p>
+                    <p class="lang-en">Workshop, paint, sound, electrical, hydraulics, neon… performance and style.</p>
+                </article>
+                <article class="feature-pill">
+                    <h3 class="lang-pt">Rolê e dinheiro</h3>
+                    <h3 class="lang-en">Hustle &amp; cash</h3>
+                    <p class="lang-pt">Corrida, táxi, entrega, drift, blitz e desafio na garagem.</p>
+                    <p class="lang-en">Races, taxi, delivery, drift, blitz checks, and the garage challenge.</p>
+                </article>
+                <article class="feature-pill">
+                    <h3 class="lang-pt">Progressão</h3>
+                    <h3 class="lang-en">Progression</h3>
+                    <p class="lang-pt">XP, nível, casa/garagem, fábrica e conquistas Steam.</p>
+                    <p class="lang-en">XP, levels, house/garage, the factory, and Steam achievements.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section" id="criadores">
+            <h2 class="lang-pt">Quem já jogou no YouTube</h2>
+            <h2 class="lang-en">Who’s played it on YouTube</h2>
+
+            <p class="lang-pt text-secondary mb-3">
+                Valeu pra quem gravou o nosso jogo. Se você fez vídeo e quiser aparecer aqui, fala com a gente no Discord.
+            </p>
+            <p class="lang-en text-secondary mb-3">
+                Thanks to everyone who recorded our game. If you made a video and want to be listed here, hit us up on Discord.
+            </p>
+
+            <div class="creator-grid">
+                <article class="creator-card">
+                    <a class="thumb-wrap" href="https://www.youtube.com/watch?v=A8WhiWebzNc" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.ytimg.com/vi/A8WhiWebzNc/hqdefault.jpg" alt="Kazin — Low and Furious" loading="lazy" width="480" height="360">
+                    </a>
+                    <div class="body">
+                        <span class="channel">Kazin</span>
+                        <a class="title" href="https://www.youtube.com/watch?v=A8WhiWebzNc" target="_blank" rel="noopener noreferrer">
+                            Carros BR, mundo aberto, polícia, racha e tunagem
+                        </a>
+                        <a class="watch-link" href="https://www.youtube.com/watch?v=A8WhiWebzNc" target="_blank" rel="noopener noreferrer">
+                            <span class="lang-pt">Assistir →</span>
+                            <span class="lang-en">Watch →</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="creator-card">
+                    <a class="thumb-wrap" href="https://www.youtube.com/watch?v=aApV7Qtf84I" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.ytimg.com/vi/aApV7Qtf84I/hqdefault.jpg" alt="Fadel Gameplay — Low and Furious" loading="lazy" width="480" height="360">
+                    </a>
+                    <div class="body">
+                        <span class="channel">Fadel Gameplay</span>
+                        <a class="title" href="https://www.youtube.com/watch?v=aApV7Qtf84I" target="_blank" rel="noopener noreferrer">
+                            Jogo focado em carros brasileiros — Low and Furious
+                        </a>
+                        <a class="watch-link" href="https://www.youtube.com/watch?v=aApV7Qtf84I" target="_blank" rel="noopener noreferrer">
+                            <span class="lang-pt">Assistir →</span>
+                            <span class="lang-en">Watch →</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="creator-card">
+                    <a class="thumb-wrap" href="https://youtu.be/JaK1Cxdzk2U" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.ytimg.com/vi/JaK1Cxdzk2U/hqdefault.jpg" alt="Game Indie Brasil — Baixos De Quebrada" loading="lazy" width="480" height="360">
+                    </a>
+                    <div class="body">
+                        <span class="channel">Game Indie Brasil</span>
+                        <a class="title" href="https://youtu.be/JaK1Cxdzk2U" target="_blank" rel="noopener noreferrer">
+                            Jogo brasileiro — Baixos de Quebrada
+                        </a>
+                        <a class="watch-link" href="https://youtu.be/JaK1Cxdzk2U" target="_blank" rel="noopener noreferrer">
+                            <span class="lang-pt">Assistir →</span>
+                            <span class="lang-en">Watch →</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="navbar laf-site-footer d-flex justify-content-center py-3 mt-auto">
+        <div class="container-fluid">
+            <span class="navbar-text w-100 text-center">&#169; 2026 CodeIT Game Studio</span>
+        </div>
+    </footer>
 </body>
 </html>

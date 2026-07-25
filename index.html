@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light">
+<html data-bs-theme="dark">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,18 +7,22 @@
   <title>Low And Furious</title>
   <link rel="icon" type="image/x-icon" href="img/icons/favicon.png">
   
-  <!-- Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   
+  <link rel="stylesheet" href="css/laf-theme.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Components -->
+  <script src="js/i18n.js"></script>
   <script src="Components/PageNav.js" defer></script>
 </head>
 
-<body>
-  <page-nav theme="light" current-page="0"></page-nav>
+<body class="laf-dark">
+  <page-nav theme="dark" current-page="0"></page-nav>
 
   <main>
     <section class="video-banner">
@@ -29,18 +33,23 @@
           </button>
         </div>
         <div class="banner-call d-flex flex-column align-items-center">
-          <h1 style="color: black;">SEU BAIXO DOS SONHOS</h1>
-          <p>EM BREVE</p>
+          <h1 class="lang-pt">SEU BAIXO DOS SONHOS</h1>
+          <h1 class="lang-en">YOUR DREAM LOW RIDER</h1>
+          <p class="lang-pt">ACESSO ANTECIPADO NA STEAM</p>
+          <p class="lang-en">EARLY ACCESS ON STEAM</p>
 
           <img class="SteamLogo" src="./img/SteamLogo_Dark.png" alt="LogoSteam" width="200" height="100">
           <a href="https://store.steampowered.com/app/2408060/Low_and_Furious/" class="w-50 text-center"
             style="display: inline-block; text-align: center; text-decoration: none;">
             <div class="container" style="position: relative; display: inline-block;">
-              <img class="play-badge" src="./img/BTADDList.png" alt="+ Lista desejo"
+              <img class="play-badge" src="./img/BTADDList.png" alt="Steam"
                 style="max-width: 35%; height: auto;">
-              <p
-                style="color: blanchedalmond; font-size: 25px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin: 0;">
-                + Lista de desejo</p>
+              <p class="lang-pt"
+                style="color: blanchedalmond; font-size: 22px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin: 0; white-space: nowrap;">
+                Jogar na Steam</p>
+              <p class="lang-en"
+                style="color: blanchedalmond; font-size: 22px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin: 0; white-space: nowrap;">
+                Play on Steam</p>
             </div>
           </a>
         </div>
@@ -48,7 +57,8 @@
           <div>
             <a href="https://youtu.be/zJjG1MIC6O8" target="_blank"
               class="link-light text-decoration-none text-nowrap border-bottom">
-              Ver no youtube
+              <span class="lang-pt">Ver no YouTube</span>
+              <span class="lang-en">Watch on YouTube</span>
               <img class="banner-bottom-icon" src="./img/icons/open_in_new_black_24dp.svg">
             </a>
           </div>
@@ -74,7 +84,10 @@
           <div class="card-emphasys-img">
             <img class="w-100" src="./img/icons/build_black_24dp.svg" alt="garage tools">
           </div>
-          <h5 class="card-title text-light m-0">Customização</h5>
+          <h5 class="card-title text-light m-0">
+            <span class="lang-pt">Customização</span>
+            <span class="lang-en">Customization</span>
+          </h5>
         </div>
 
         <div class="carousel slide carousel-fade feature-card-img card-img-bottom" id="customization-images"
@@ -93,17 +106,21 @@
         </div>
 
         <div class="card card-emphasys text-light text-center text-nowrap w-100 bottom-0 border-0 rounded-0 p-2">
-          <h6>Além de uma variedade de veículos!</h6>
+          <h6 class="lang-pt">Além de uma variedade de veículos!</h6>
+          <h6 class="lang-en">Plus a wide variety of vehicles!</h6>
         </div>
       </div>
 
-      <div class="feature-card card p-0 d-flex align-items-center">
+      <div class="feature-card card p-0 d-flex flex-column align-items-center">
         <div
           class="card card-emphasys w-100 border-0 rounded-0 top-0 p-2 gap-2 d-flex flex-nowrap flex-row justify-content-center align-items-center">
           <div class="card-emphasys-img">
             <img class="w-100" src="./img/icons/public_black_24dp.svg" alt="earth icon">
           </div>
-          <h5 class="card-title text-light m-0">Mundo Aberto</h5>
+          <h5 class="card-title text-light m-0">
+            <span class="lang-pt">Mundo Aberto</span>
+            <span class="lang-en">Open World</span>
+          </h5>
         </div>
 
         <div class="carousel slide carousel-fade feature-card-img card-img-bottom" id="world-images"
@@ -122,7 +139,8 @@
         </div>
 
         <div class="card card-emphasys text-light text-center text-nowrap w-100 bottom-0 border-0 rounded-0 p-2">
-          <h6>Ambientado no Brasil!</h6>
+          <h6 class="lang-pt">Ambientado no Brasil!</h6>
+          <h6 class="lang-en">Set in Brazil!</h6>
         </div>
       </div>
 
@@ -132,7 +150,10 @@
           <div class="card-emphasys-img">
             <img class="w-100" src="./img/icons/paid_black_24dp.svg" alt="coin">
           </div>
-          <h5 class="card-title text-light m-0">Serviços e Corridas</h5>
+          <h5 class="card-title text-light m-0">
+            <span class="lang-pt">Serviços e Corridas</span>
+            <span class="lang-en">Jobs &amp; Races</span>
+          </h5>
         </div>
 
         <div class="carousel slide carousel-fade feature-card-img card-img-bottom" id="services-images"
@@ -151,7 +172,8 @@
         </div>
 
         <div class="card card-emphasys text-light text-center text-nowrap w-100 bottom-0 border-0 rounded-0 p-2">
-          <h6>Ganhe e gaste do jeito que quiser!</h6>
+          <h6 class="lang-pt">Ganhe e gaste do jeito que quiser!</h6>
+          <h6 class="lang-en">Earn and spend your way!</h6>
         </div>
       </div>
     </section>
@@ -163,17 +185,21 @@
 
   <aside class="social-buttons m-4 d-flex flex-column justify-content-around">
     <a href="https://www.instagram.com/codeitstudio/" target="_blank" rel="noopener noreferrer"
-      class="btn my-2 rounded-circle instagram-btn" data-bs-toggle="tooltip" data-bs-title="Siga nosso instagram!">
+      class="btn my-2 rounded-circle instagram-btn" data-bs-toggle="tooltip"
+      data-bs-title-pt="Siga nosso Instagram!" data-bs-title-en="Follow us on Instagram!"
+      data-bs-title="Siga nosso Instagram!">
       <img src="./img/instagram_logo.png" class="rounded-circle">
     </a>
 
     <a href="https://discord.gg/bDW2BnbZp7" target="_blank" rel="noopener noreferrer"
-      class="btn my-2 rounded-circle discord-btn" data-bs-toggle="tooltip" data-bs-title="Entre no nosso discord!">
+      class="btn my-2 rounded-circle discord-btn" data-bs-toggle="tooltip"
+      data-bs-title-pt="Entre no nosso Discord!" data-bs-title-en="Join our Discord!"
+      data-bs-title="Entre no nosso Discord!">
       <img src="./img/icon_clyde_white_RGB.png" class="social-img discord-img">
     </a>
   </aside>
 
-  <footer class="navbar bg-light d-flex justify-content-center py-3">
+  <footer class="navbar laf-site-footer d-flex justify-content-center py-3">
     <div class="container-fluid row gap-3 gap-md-0">
       <span class="col col-12 col-md-4 navbar-text d-flex justify-content-center justify-content-md-start">
         <a href="https://www.instagram.com/codeitstudio/" target="_blank" rel="noopener noreferrer"
@@ -188,11 +214,10 @@
       </span>
 
       <span class="col col-12 navbar-text text-center col-md-4">
-        &#169 2023 CodeIT Game Studio
+        &#169; 2026 CodeIT Game Studio
       </span>
 
       <span class="col col-12 col-md-4 navbar-text d-flex justify-content-center justify-content-md-end">
-        <!-- Website by DuduRomeu -->
       </span>
     </div>
   </footer>
