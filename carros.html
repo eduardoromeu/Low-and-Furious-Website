@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carros — Low and Furious</title>
+  <link rel="icon" type="image/x-icon" href="img/icons/favicon.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/laf-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carros.css">
+
+  <script src="js/i18n.js"></script>
+  <script src="Components/PageNav.js" defer></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./node_modules/three/build/three.module.js",
+      "three/addons/": "./node_modules/three/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="js/car-viewer.js"></script>
+</head>
+
+<body class="laf-dark carros-page">
+  <page-nav theme="dark" current-page="5"></page-nav>
+
+  <main>
+    <section class="car-layout">
+      <div class="car-stage" id="car-stage" aria-label="Carros">
+        <div class="car-stage-status" id="car-stage-status">
+          <p class="lang-pt">Carregando…</p>
+          <p class="lang-en">Loading…</p>
+        </div>
+      </div>
+      <div class="car-info" id="car-info" hidden>
+        <div class="car-info-head">
+          <button type="button" class="car-nav-btn" id="car-prev">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <div class="car-info-titles">
+            <h1 id="car-title"></h1>
+            <p class="car-price" id="car-price"></p>
+          </div>
+          <button type="button" class="car-nav-btn" id="car-next">
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+        <p class="car-description" id="car-description"></p>
+        <div class="car-list" id="car-list" role="listbox"></div>
+        <p class="car-hint">
+          <span class="lang-pt">Arraste para girar · scroll para aproximar</span>
+          <span class="lang-en">Drag to orbit · scroll to zoom</span>
+        </p>
+      </div>
+      <div class="car-colors" id="car-colors" hidden>
+        <p class="car-colors-label" id="car-colors-label">
+          <span class="lang-pt">Carroceria</span>
+          <span class="lang-en">Body</span>
+        </p>
+        <div class="car-colors-swatches" id="car-color-swatches" role="radiogroup" aria-labelledby="car-colors-label"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="navbar laf-site-footer d-flex justify-content-center py-3">
+    <div class="container-fluid row gap-3 gap-md-0">
+      <span class="col col-12 col-md-4 navbar-text d-flex justify-content-center justify-content-md-start">
+        <a href="https://www.instagram.com/codeitstudio/" target="_blank" rel="noopener noreferrer"
+          class="footer-social me-2">
+          <img src="./img/instagram_logo_footer32.png" alt="Instagram">
+        </a>
+        <a href="https://discord.gg/bDW2BnbZp7" target="_blank" rel="noopener noreferrer" class="footer-social ms-2">
+          <img src="./img/discord_icon_footer64.png" alt="Discord">
+        </a>
+      </span>
+      <span class="col col-12 navbar-text text-center col-md-4">
+        &#169; 2026 CodeIT Game Studio
+      </span>
+      <span class="col col-12 col-md-4 navbar-text d-flex justify-content-center justify-content-md-end">
+      </span>
+    </div>
+  </footer>
+</body>
+
+</html>

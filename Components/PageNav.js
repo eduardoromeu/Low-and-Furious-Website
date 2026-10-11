@@ -117,6 +117,7 @@ class PageNav extends HTMLElement {
           class="navbar-nav col-12 col-md-6 align-items-center justify-content-around justify-content-md-center px-0">
           <a class="${linkClass(0)}" href="index.html"><span class="lang-pt">Início</span><span class="lang-en">Home</span></a>
           <a class="${linkClass(1)}" href="cars.html"><span class="lang-pt">Conteúdo</span><span class="lang-en">Content</span></a>
+          <a class="${linkClass(5)}" href="carros.html"><span class="lang-pt">Carros</span><span class="lang-en">Cars</span></a>
           <a class="${linkClass(2)}"
             href="https://www.central-mods.com.br/search/label/Baixos%20de%20Quebrada?&max-results=7">Blog</a>
           <a class="${linkClass(3)}" href="privacy.html"><span class="lang-pt">Privacidade</span><span class="lang-en">Privacy</span></a>

@@ -1,0 +1,8 @@
+{
+  "cars": [
+    {
+      "id": "getta",
+      "catalog": "models/Cars/Getta/getta.json"
+    }
+  ]
+}
