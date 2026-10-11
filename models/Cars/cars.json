@@ -1,8 +1,48 @@
 {
   "cars": [
     {
+      "id": "sarreiro",
+      "catalog": "models/Cars/Sarreiro/sarreiro.json"
+    },
+    {
+      "id": "duol",
+      "catalog": "models/Cars/Duol/duol.json"
+    },
+    {
       "id": "getta",
       "catalog": "models/Cars/Getta/getta.json"
+    },
+    {
+      "id": "kuib",
+      "catalog": "models/Cars/Kuib/kuib.json"
+    },
+    {
+      "id": "voll-rtx",
+      "catalog": "models/Cars/VollRTx/voll-rtx.json"
+    },
+    {
+      "id": "del-valle",
+      "catalog": "models/Cars/DelValle/del-valle.json"
+    },
+    {
+      "id": "bolt-gx",
+      "catalog": "models/Cars/BoltGX/bolt-gx.json"
+    },
+    {
+      "id": "blaster",
+      "catalog": "models/Cars/Blaster/blaster.json"
+    },
+    {
+      "id": "tropeiro",
+      "catalog": "models/Cars/Tropeiro/tropeiro.json"
+    },
+    {
+      "id": "volt-gt",
+      "catalog": "models/Cars/VoltGT/volt-gt.json"
+    },
+    {
+      "id": "polaris",
+      "catalog": "models/Cars/Polaris/polaris.json"
     }
   ]
 }

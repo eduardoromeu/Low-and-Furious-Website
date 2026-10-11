@@ -235,6 +235,7 @@ function initViewer(container, statusEl) {
     listEl?.querySelectorAll(".car-list-item").forEach((item, index) => {
       const selected = index === currentIndex;
       item.setAttribute("aria-selected", selected ? "true" : "false");
+      if (selected) item.scrollIntoView({ block: "nearest" });
     });
   }
 
@@ -264,10 +265,34 @@ async function loadCarModel(car, colladaLoader, textureLoader) {
     if (definition.role === "body") bodyMaterials.push(material);
   }
 
-  const collada = await colladaLoader.loadAsync(root + catalog.model);
-  applyShopMaterials(collada.scene, catalog.parts, materials);
+  const files = catalog.models?.length ? catalog.models : [catalog.model];
+  const model = new THREE.Group();
+  for (const file of files) {
+    const collada = await colladaLoader.loadAsync(root + file);
+    model.add(collada.scene);
+  }
+  const propScenes = new Map();
+  for (const prop of catalog.props || []) {
+    if (!prop.model || propScenes.has(prop.model)) continue;
+    const collada = await colladaLoader.loadAsync(root + prop.model);
+    propScenes.set(prop.model, collada.scene);
+  }
+  for (const prop of catalog.props || []) {
+    const source = propScenes.get(prop.model);
+    if (!source) continue;
+    const holder = new THREE.Group();
+    holder.name = prop.name || "prop";
+    holder.add(source.clone(true));
+    placeShopProp(holder, prop, catalog.frame);
+    if (prop.facing === "outward") holder.rotateY(Math.PI);
+    model.add(holder);
+  }
+  for (const placement of catalog.placements || []) {
+    placeShopPart(model, placement, catalog.frame);
+  }
+  applyShopMaterials(model, catalog.parts, materials);
   return {
-    model: collada.scene,
+    model,
     bodyMaterials,
     bodyColors: catalog.bodyColors || [catalog.bodyColor],
   };
@@ -400,7 +425,8 @@ function createMaterial(definition, textureLoader, root) {
     }
   }
 
-  const map = loadTexture(textureLoader, root, definition.map, true);
+  // Car paint in the game is a solid color. The remap texture is a UV mask for another model and is not sampled by the paint shader.
+  const map = definition.role === "body" ? null : loadTexture(textureLoader, root, definition.map, true);
   const normalMap = loadTexture(textureLoader, root, definition.normalMap, false);
   if (map) material.map = map;
   if (normalMap) material.normalMap = normalMap;
@@ -417,6 +443,63 @@ function loadTexture(textureLoader, root, relativePath, srgb) {
   texture.wrapS = THREE.RepeatWrapping;
   texture.wrapT = THREE.RepeatWrapping;
   return texture;
+}
+
+function invertQuaternion(q) {
+  return [-q[0], -q[1], -q[2], q[3]];
+}
+
+function multiplyQuaternion(a, b) {
+  const [ax, ay, az, aw] = a;
+  const [bx, by, bz, bw] = b;
+  return [
+    aw * bx + ax * bw + ay * bz - az * by,
+    aw * by - ax * bz + ay * bw + az * bx,
+    aw * bz + ax * by - ay * bx + az * bw,
+    aw * bw - ax * bx - ay * by - az * bz,
+  ];
+}
+
+function rotateVector(q, v) {
+  const [qx, qy, qz, qw] = q;
+  const [vx, vy, vz] = v;
+  const tx = 2 * (qy * vz - qz * vy);
+  const ty = 2 * (qz * vx - qx * vz);
+  const tz = 2 * (qx * vy - qy * vx);
+  return [
+    vx + qw * tx + (qy * tz - qz * ty),
+    vy + qw * ty + (qz * tx - qx * tz),
+    vz + qw * tz + (qx * ty - qy * tx),
+  ];
+}
+
+function shopPose(prop, frame) {
+  const rotation = frame?.length === 4 ? frame : [0, 0, 0, 1];
+  const intoModel = invertQuaternion(rotation);
+  const local = rotateVector(intoModel, prop.position);
+  const turned = multiplyQuaternion(intoModel, prop.rotation);
+  return {
+    position: [-local[0], local[1], local[2]],
+    quaternion: [-turned[0], turned[1], turned[2], turned[3]],
+  };
+}
+
+function placeShopProp(holder, prop, frame) {
+  const pose = shopPose(prop, frame);
+  holder.position.fromArray(pose.position);
+  holder.quaternion.fromArray(pose.quaternion);
+}
+
+function placeShopPart(model, placement, frame) {
+  let node = null;
+  model.traverse((object) => {
+    if (!node && object.name === placement.name) node = object;
+  });
+  if (!node?.parent) return;
+  model.updateMatrixWorld(true);
+  const target = new THREE.Vector3().fromArray(shopPose(placement, frame).position);
+  node.parent.worldToLocal(target);
+  node.position.copy(target);
 }
 
 function applyShopMaterials(root, parts, materials) {
@@ -439,9 +522,11 @@ function applyShopMaterials(root, parts, materials) {
     const assigned = part.materials.map((id) => materials.get(id)).filter(Boolean);
     if (assigned.length === 0) continue;
 
-    if (meshes.length === 1 && Array.isArray(meshes[0].material)) {
-      meshes[0].material = meshes[0].material.map((_, index) => assigned[index] || assigned[assigned.length - 1]);
-      meshes[0].renderOrder = renderOrderFor(assigned[0]);
+    if (meshes.every((mesh) => Array.isArray(mesh.material))) {
+      meshes.forEach((mesh) => {
+        mesh.material = mesh.material.map((_, index) => assigned[index] || assigned[assigned.length - 1]);
+        mesh.renderOrder = renderOrderFor(assigned[0]);
+      });
     } else {
       meshes.forEach((mesh, index) => {
         const material = assigned[index] || assigned[0];

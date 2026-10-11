@@ -1,0 +1,1046 @@
+{
+  "name": "Bolt GX",
+  "manufacturer": "Malfada Adel",
+  "year": 2005,
+  "price": 61100,
+  "description": {
+    "pt": "Aviso: Este carro ainda não possui todas as peças de tunagem ajustadas nesta versão do jogo.",
+    "en": "Notice: This car does not have all parts tuning adjusted in this version of the game."
+  },
+  "model": "BoltGX.dae",
+  "models": [
+    "BoltGX.dae",
+    "BoltGX-2.dae"
+  ],
+  "frame": [
+    0,
+    0.70710677,
+    0,
+    0.70710677
+  ],
+  "props": [
+    {
+      "model": "BoltGX-prop1.dae",
+      "name": "R_Gol By FJB (1)",
+      "position": [
+        -0.874,
+        -0.5230526,
+        -1.5140002
+      ],
+      "rotation": [
+        -0.0000056314166,
+        0.9999932,
+        -0.0018031059,
+        -0.0032345355
+      ],
+      "facing": "outward"
+    },
+    {
+      "model": "BoltGX-prop1.dae",
+      "name": "R_Gol By FJB (3)",
+      "position": [
+        0.86,
+        -0.5230526,
+        1.6984029
+      ],
+      "rotation": [
+        0.0018031062,
+        0.0032343864,
+        -0.0000056311255,
+        0.9999932
+      ],
+      "facing": "outward"
+    },
+    {
+      "model": "BoltGX-prop1.dae",
+      "name": "R_Gol By FJB",
+      "position": [
+        -0.86,
+        -0.5230526,
+        1.6984029
+      ],
+      "rotation": [
+        -0.000005631533,
+        0.9999932,
+        -0.0018031059,
+        -0.0032345355
+      ],
+      "facing": "outward"
+    },
+    {
+      "model": "BoltGX-prop1.dae",
+      "name": "R_Gol By FJB (2)",
+      "position": [
+        0.874,
+        -0.5230526,
+        -1.514
+      ],
+      "rotation": [
+        0.001803106,
+        0.0032343268,
+        -0.0000056313584,
+        0.99999315
+      ],
+      "facing": "outward"
+    }
+  ],
+  "placements": [
+    {
+      "name": "Esc_exhaust_Dora",
+      "position": [
+        -0.506,
+        -0.528,
+        -1.945
+      ],
+      "rotation": [
+        -0.00000662891,
+        -0.0037216719,
+        0.0018030734,
+        0.9999915
+      ]
+    },
+    {
+      "name": "exhaust_Dora",
+      "position": [
+        -0.506,
+        -0.528,
+        -1.945
+      ],
+      "rotation": [
+        -0.00000662891,
+        -0.0037216719,
+        0.0018030734,
+        0.9999915
+      ]
+    }
+  ],
+  "bodyColor": [
+    0.7529412,
+    0.7529412,
+    0.7529412
+  ],
+  "bodyColors": [
+    [
+      0.7529412,
+      0.7529412,
+      0.7529412
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0.29411766,
+      0,
+      0.50980395
+    ],
+    [
+      0,
+      0.5019608,
+      0.5019608
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      0.24705882,
+      0.24705882,
+      0.24705882
+    ],
+    [
+      0.11764706,
+      0.22745098,
+      0.4
+    ],
+    [
+      0.8156863,
+      0.10980392,
+      0.12156863
+    ],
+    [
+      0.85490197,
+      0.85490197,
+      0.85490197
+    ],
+    [
+      0.23137255,
+      0.49019608,
+      0.34117648
+    ],
+    [
+      0.64705884,
+      0.60784316,
+      0.5372549
+    ]
+  ],
+  "materials": {
+    "5dfaaa1610d5f36468984fe4415737ae": {
+      "name": "LightsOff",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.5,
+      "smoothness": 0.952,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/LightsOff.png",
+      "normalMap": "textures/LightsOff_NM.png",
+      "emissionMap": null
+    },
+    "06c86ebc9a9fb7f4081b06307b5d4dbc": {
+      "name": "CarWindows",
+      "color": [
+        0.11999995,
+        0.13999996,
+        0.15999997
+      ],
+      "opacity": 0.1,
+      "metallic": 0,
+      "smoothness": 0.96,
+      "transparent": true,
+      "alphaClip": false,
+      "cutoff": 0.762,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": null,
+      "normalMap": null,
+      "emissionMap": null,
+      "role": "glass"
+    },
+    "1ecd67fd3c746234b99b23f46d1dd650": {
+      "name": "vehiclelights128",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.04,
+      "smoothness": 0.45,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        4,
+        4,
+        4
+      ],
+      "emissionOn": false,
+      "map": "textures/vehiclelights128.PNG",
+      "normalMap": "textures/vehiclelights128_NM.PNG",
+      "emissionMap": "textures/vehiclelights128_on.png"
+    },
+    "db2770946847f61498c657272d4cc380": {
+      "name": "CarMetal",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 1,
+      "smoothness": 0.432,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/CarMetal.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "e9a5c92d978acda47a0fe949b8a1d636": {
+      "name": "BlackColor",
+      "color": [
+        0,
+        0,
+        0
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/BlackColor.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "ea80046fca6fe944993f6d6e2b1c6495": {
+      "name": "CarBlackPlastic",
+      "color": [
+        0.02002242,
+        0.01978434,
+        0.02418803
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": null,
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "387e599a61c7bd949a619e764adbc827": {
+      "name": "remap_Golg3",
+      "color": [
+        0.7529412,
+        0.7529412,
+        0.7529412
+      ],
+      "opacity": 1,
+      "metallic": 0.142,
+      "smoothness": 0.727,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": null,
+      "normalMap": null,
+      "emissionMap": null,
+      "role": "body"
+    },
+    "f5d3cd7a67420094784ec3a7a8bbe410": {
+      "name": "Alpha_CarEmblemas2",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.31,
+      "smoothness": 0.01,
+      "transparent": true,
+      "alphaClip": true,
+      "cutoff": 0.68,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/Alpha_CarEmblemas2.png",
+      "normalMap": "textures/Alpha_CarEmblemas2_NM.png",
+      "emissionMap": null
+    },
+    "406a3c9d1ac69ed4c8ecc2e4ff812621": {
+      "name": "TextureAtlas",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.16,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/TextureAtlas.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "523978239c130de4eb13dcbb3a23d83c": {
+      "name": "discsfreioPreto",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/discsfreioPreto.png",
+      "normalMap": "textures/discsfreioPreto_NM.png",
+      "emissionMap": null
+    },
+    "24a99f85ca15e394180e9f6af25921c7": {
+      "name": "grill Gol",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": true,
+      "alphaClip": true,
+      "cutoff": 0.563,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/gol-grid.png",
+      "normalMap": "textures/gol-grid_NM.png",
+      "emissionMap": null
+    },
+    "3107a719f31ca9c40948a11cc0a6d779": {
+      "name": "GenericLogo",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.36,
+      "smoothness": 0.18,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/GenericLogo.png",
+      "normalMap": "textures/GenericLogo_NM.png",
+      "emissionMap": null
+    },
+    "5f71021c15d6d20489f0a154b15b1a30": {
+      "name": "Alpha_vehiclelights128",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.49,
+      "smoothness": 0.53,
+      "transparent": true,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/Alpha_vehiclelights128.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "50bcd320eb81652428c801e2d120b20a": {
+      "name": "CarReflex",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.663,
+      "smoothness": 0.72,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": null,
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "138e2f6fdfac5634e9b47ff765a00a71": {
+      "name": "CarpeteInt",
+      "color": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/carpetemacio.png",
+      "normalMap": "textures/CarpeteInt_NM.png",
+      "emissionMap": null
+    },
+    "507a9d1ca42cf1c439aed8dce868b3fe": {
+      "name": "grill",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/grill.png",
+      "normalMap": "textures/grill_NM.png",
+      "emissionMap": null
+    },
+    "d65b959d268a006448ca538de8163581": {
+      "name": "FundoCar",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.38,
+      "smoothness": 0.38,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/FundoCar.png",
+      "normalMap": "textures/FundoCar_NM.png",
+      "emissionMap": null
+    },
+    "33cea30744247f14f920d1289867b50e": {
+      "name": "discs",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.25,
+      "smoothness": 0.1,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/discs.png",
+      "normalMap": "textures/discs_NM.png",
+      "emissionMap": null
+    },
+    "205156d9197bdc94abade38b0ac14d9e": {
+      "name": "CarTire_Albedo",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/CarTire_Albedo.png",
+      "normalMap": "textures/CarTire_Normal.png",
+      "emissionMap": "textures/CarTire_Emissive.png"
+    }
+  },
+  "parts": [
+    {
+      "name": "MileLightR_Bolt",
+      "active": true,
+      "materials": [
+        "5dfaaa1610d5f36468984fe4415737ae"
+      ]
+    },
+    {
+      "name": "WindowsFront_Bolt",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "blinker_rear_R_Bolt",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "Esc_exhaust_Dora",
+      "active": true,
+      "materials": [
+        "db2770946847f61498c657272d4cc380",
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "chassisBarraLateral_Bolt_Color",
+      "active": true,
+      "materials": [
+        "ea80046fca6fe944993f6d6e2b1c6495"
+      ]
+    },
+    {
+      "name": "chassis_Bolt_Color",
+      "active": true,
+      "materials": [
+        "387e599a61c7bd949a619e764adbc827"
+      ]
+    },
+    {
+      "name": "headlights_L_Bolt",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "BumperFrontRear_Bolt_Color1",
+      "active": true,
+      "materials": [
+        "387e599a61c7bd949a619e764adbc827"
+      ]
+    },
+    {
+      "name": "reverselight_R_Bolt",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "root_Parts",
+      "active": true,
+      "materials": [
+        "f5d3cd7a67420094784ec3a7a8bbe410",
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "db2770946847f61498c657272d4cc380",
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "Seat_Front_Dora",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "brakelight_R_Bolt",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "root_Paint",
+      "active": true,
+      "materials": [
+        "387e599a61c7bd949a619e764adbc827"
+      ]
+    },
+    {
+      "name": "axle_Dora",
+      "active": true,
+      "materials": [
+        "406a3c9d1ac69ed4c8ecc2e4ff812621",
+        "523978239c130de4eb13dcbb3a23d83c"
+      ]
+    },
+    {
+      "name": "controlarmL_Dora",
+      "active": true,
+      "materials": [
+        "406a3c9d1ac69ed4c8ecc2e4ff812621"
+      ]
+    },
+    {
+      "name": "blinker_front_R_Bolt",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "hood_Bolt_Color",
+      "active": true,
+      "materials": [
+        "387e599a61c7bd949a619e764adbc827"
+      ]
+    },
+    {
+      "name": "MileGrille",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "24a99f85ca15e394180e9f6af25921c7"
+      ]
+    },
+    {
+      "name": "LogoFront_Bolt",
+      "active": true,
+      "materials": [
+        "3107a719f31ca9c40948a11cc0a6d779"
+      ]
+    },
+    {
+      "name": "antenna_Dora",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "V_Lanterna_L_Bolt",
+      "active": true,
+      "materials": [
+        "5f71021c15d6d20489f0a154b15b1a30"
+      ]
+    },
+    {
+      "name": "MileBumper_Bolt_Color",
+      "active": true,
+      "materials": [
+        "387e599a61c7bd949a619e764adbc827"
+      ]
+    },
+    {
+      "name": "Mirror_M_Dora",
+      "active": true,
+      "materials": [
+        "50bcd320eb81652428c801e2d120b20a",
+        "ea80046fca6fe944993f6d6e2b1c6495"
+      ]
+    },
+    {
+      "name": "blinker_front_L_Bolt",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "Wiper_R_Dora",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "Wiper_L_Dora",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "BumperFrontRear_Bolt_Color3",
+      "active": true,
+      "materials": [
+        "ea80046fca6fe944993f6d6e2b1c6495"
+      ]
+    },
+    {
+      "name": "root_Windows",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "brakelight_L_Bolt",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "interior_Bolt",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "138e2f6fdfac5634e9b47ff765a00a71"
+      ]
+    },
+    {
+      "name": "MirrorRetr_L_Bolt",
+      "active": true,
+      "materials": [
+        "50bcd320eb81652428c801e2d120b20a"
+      ]
+    },
+    {
+      "name": "V_Farol_L_Bolt",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "WindowsChassis_Bolt",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "NoMile_Bolt",
+      "active": false,
+      "materials": [
+        "507a9d1ca42cf1c439aed8dce868b3fe"
+      ]
+    },
+    {
+      "name": "headlights_R_Bolt",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "handle_Bolt",
+      "active": true,
+      "materials": [
+        "ea80046fca6fe944993f6d6e2b1c6495"
+      ]
+    },
+    {
+      "name": "LogoRear_Bolt",
+      "active": true,
+      "materials": [
+        "3107a719f31ca9c40948a11cc0a6d779"
+      ]
+    },
+    {
+      "name": "exhaust_Dora",
+      "active": true,
+      "materials": [
+        "db2770946847f61498c657272d4cc380"
+      ]
+    },
+    {
+      "name": "controlarmR_Dora",
+      "active": true,
+      "materials": [
+        "406a3c9d1ac69ed4c8ecc2e4ff812621"
+      ]
+    },
+    {
+      "name": "LightNight_R_Bolt",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "Volante_Dora",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "reverselight_L_Bolt",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "LightNight_L_Bolt",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "V_Lanterna_R_Bolt",
+      "active": true,
+      "materials": [
+        "5f71021c15d6d20489f0a154b15b1a30"
+      ]
+    },
+    {
+      "name": "BumperFrontRear_Bolt_Color2",
+      "active": true,
+      "materials": [
+        "ea80046fca6fe944993f6d6e2b1c6495"
+      ]
+    },
+    {
+      "name": "Partes1Bolt",
+      "active": true,
+      "materials": [
+        "d65b959d268a006448ca538de8163581",
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "db2770946847f61498c657272d4cc380",
+        "06c86ebc9a9fb7f4081b06307b5d4dbc",
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "MirrorRetr_R_Bolt",
+      "active": true,
+      "materials": [
+        "50bcd320eb81652428c801e2d120b20a"
+      ]
+    },
+    {
+      "name": "LimpadorTraseiro_Dora",
+      "active": true,
+      "materials": [
+        "ea80046fca6fe944993f6d6e2b1c6495"
+      ]
+    },
+    {
+      "name": "V_Farol_R_Bolt",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "blinker_rear_L_Bolt",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "MileLightL_Bolt",
+      "active": true,
+      "materials": [
+        "5dfaaa1610d5f36468984fe4415737ae"
+      ]
+    },
+    {
+      "name": "Friso_Bolt",
+      "active": true,
+      "materials": [
+        "ea80046fca6fe944993f6d6e2b1c6495"
+      ]
+    },
+    {
+      "name": "Seat_Rear_Dora",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "RIM_GOL",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "3107a719f31ca9c40948a11cc0a6d779",
+        "33cea30744247f14f920d1289867b50e",
+        "406a3c9d1ac69ed4c8ecc2e4ff812621"
+      ]
+    },
+    {
+      "name": "TIRE_GOL",
+      "active": true,
+      "materials": [
+        "205156d9197bdc94abade38b0ac14d9e"
+      ]
+    }
+  ]
+}

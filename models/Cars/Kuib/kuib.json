@@ -1,0 +1,921 @@
+{
+  "name": "Kuib",
+  "manufacturer": "Venout",
+  "year": 2017,
+  "price": 28600,
+  "description": {
+    "pt": "Aviso: Este carro ainda não possui todas as peças de tunagem ajustadas nesta versão do jogo.",
+    "en": "Notice: This car does not have all parts tuning adjusted in this version of the game."
+  },
+  "model": "Kuib.dae",
+  "models": [
+    "Kuib.dae"
+  ],
+  "frame": [
+    0,
+    0,
+    0,
+    1
+  ],
+  "props": [],
+  "placements": [
+    {
+      "name": "Esc_exhaust_Kuib",
+      "position": [
+        -0.44758752,
+        -0.5542016,
+        -2.0019817
+      ],
+      "rotation": [
+        8.0406125e-17,
+        1.1920929e-7,
+        -6.617445e-24,
+        1
+      ]
+    },
+    {
+      "name": "exhaust_Kuib",
+      "position": [
+        -0.44758752,
+        -0.5542016,
+        -2.0019817
+      ],
+      "rotation": [
+        8.0406125e-17,
+        1.1920929e-7,
+        -6.617445e-24,
+        1
+      ]
+    }
+  ],
+  "bodyColor": [
+    1,
+    1,
+    1
+  ],
+  "bodyColors": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      0.9607843,
+      0.3882353,
+      0
+    ],
+    [
+      0.6745098,
+      0.6745098,
+      0.6745098
+    ],
+    [
+      0.72156864,
+      0.003921569,
+      0.003921569
+    ],
+    [
+      0.20392157,
+      0.20392157,
+      0.20392157
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "materials": {
+    "e9a5c92d978acda47a0fe949b8a1d636": {
+      "name": "BlackColor",
+      "color": [
+        0,
+        0,
+        0
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/BlackColor.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "5dfaaa1610d5f36468984fe4415737ae": {
+      "name": "LightsOff",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.5,
+      "smoothness": 0.952,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/LightsOff.png",
+      "normalMap": "textures/LightsOff_NM.png",
+      "emissionMap": null
+    },
+    "54bf754344467d846a80239c5f5e47ea": {
+      "name": "remapkwid",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.2,
+      "smoothness": 1,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/remapKwid.png",
+      "normalMap": null,
+      "emissionMap": null,
+      "role": "body"
+    },
+    "33cea30744247f14f920d1289867b50e": {
+      "name": "discs",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.25,
+      "smoothness": 0.1,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/discs.png",
+      "normalMap": "textures/discs_NM.png",
+      "emissionMap": null
+    },
+    "406a3c9d1ac69ed4c8ecc2e4ff812621": {
+      "name": "TextureAtlas",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.16,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/TextureAtlas.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "622da90a08df198429011190cada0fbc": {
+      "name": "CarMetalClaro",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.9,
+      "smoothness": 1,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/CarMetalClaro.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "1c207242d0a293845a227c83aa51c036": {
+      "name": "Alpha_Lights1",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.9,
+      "smoothness": 0.77,
+      "transparent": true,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/Alpha_Lights1.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "f5f45c81cf1f8794994d84d3e4666f56": {
+      "name": "Lights1Off",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.5,
+      "smoothness": 0.952,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/Lights1Off.png",
+      "normalMap": "textures/Lights1Off_NM.png",
+      "emissionMap": null
+    },
+    "3990f2d8fa672f24485172d7552cf528": {
+      "name": "Alpha_CarEmblemas1",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.31,
+      "smoothness": 0.01,
+      "transparent": true,
+      "alphaClip": true,
+      "cutoff": 0.68,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/Alpha_CarEmblemas1.png",
+      "normalMap": "textures/Alpha_CarEmblemas1_NM.png",
+      "emissionMap": null
+    },
+    "205156d9197bdc94abade38b0ac14d9e": {
+      "name": "CarTire_Albedo",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/CarTire_Albedo.png",
+      "normalMap": "textures/CarTire_Normal.png",
+      "emissionMap": "textures/CarTire_Emissive.png"
+    },
+    "db2770946847f61498c657272d4cc380": {
+      "name": "CarMetal",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 1,
+      "smoothness": 0.432,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/CarMetal.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "06c86ebc9a9fb7f4081b06307b5d4dbc": {
+      "name": "CarWindows",
+      "color": [
+        0.11999995,
+        0.13999996,
+        0.15999997
+      ],
+      "opacity": 0.1,
+      "metallic": 0,
+      "smoothness": 0.96,
+      "transparent": true,
+      "alphaClip": false,
+      "cutoff": 0.762,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": null,
+      "normalMap": null,
+      "emissionMap": null,
+      "role": "glass"
+    },
+    "50bcd320eb81652428c801e2d120b20a": {
+      "name": "CarReflex",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.663,
+      "smoothness": 0.72,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": null,
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "507a9d1ca42cf1c439aed8dce868b3fe": {
+      "name": "grill",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/grill.png",
+      "normalMap": "textures/grill_NM.png",
+      "emissionMap": null
+    },
+    "138e2f6fdfac5634e9b47ff765a00a71": {
+      "name": "CarpeteInt",
+      "color": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/carpetemacio.png",
+      "normalMap": "textures/CarpeteInt_NM.png",
+      "emissionMap": null
+    },
+    "d65b959d268a006448ca538de8163581": {
+      "name": "FundoCar",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.38,
+      "smoothness": 0.38,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/FundoCar.png",
+      "normalMap": "textures/FundoCar_NM.png",
+      "emissionMap": null
+    },
+    "523978239c130de4eb13dcbb3a23d83c": {
+      "name": "discsfreioPreto",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/discsfreioPreto.png",
+      "normalMap": "textures/discsfreioPreto_NM.png",
+      "emissionMap": null
+    },
+    "ea80046fca6fe944993f6d6e2b1c6495": {
+      "name": "CarBlackPlastic",
+      "color": [
+        0.02002242,
+        0.01978434,
+        0.02418803
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": null,
+      "normalMap": null,
+      "emissionMap": null
+    }
+  },
+  "parts": [
+    {
+      "name": "Seat_Rear_Kwid",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "lightsM_L_Kuib",
+      "active": true,
+      "materials": [
+        "5dfaaa1610d5f36468984fe4415737ae"
+      ]
+    },
+    {
+      "name": "N_LatariaKwidCOMUM_F",
+      "active": true,
+      "materials": [
+        "54bf754344467d846a80239c5f5e47ea"
+      ]
+    },
+    {
+      "name": "RIMRL_KWID",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "33cea30744247f14f920d1289867b50e",
+        "406a3c9d1ac69ed4c8ecc2e4ff812621",
+        "622da90a08df198429011190cada0fbc"
+      ]
+    },
+    {
+      "name": "V_Farol_L_Kuib",
+      "active": true,
+      "materials": [
+        "1c207242d0a293845a227c83aa51c036"
+      ]
+    },
+    {
+      "name": "headlights_L_Kuib",
+      "active": true,
+      "materials": [
+        "f5f45c81cf1f8794994d84d3e4666f56"
+      ]
+    },
+    {
+      "name": "P_kwidPadrao_F",
+      "active": true,
+      "materials": [
+        "3990f2d8fa672f24485172d7552cf528",
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "blinker_rear_L_Kuib",
+      "active": true,
+      "materials": [
+        "f5f45c81cf1f8794994d84d3e4666f56"
+      ]
+    },
+    {
+      "name": "TIREFR_KWID",
+      "active": true,
+      "materials": [
+        "205156d9197bdc94abade38b0ac14d9e"
+      ]
+    },
+    {
+      "name": "Esc_exhaust_Kuib",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "db2770946847f61498c657272d4cc380"
+      ]
+    },
+    {
+      "name": "Wiper_Kuib",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "headlights_R_Kuib",
+      "active": true,
+      "materials": [
+        "f5f45c81cf1f8794994d84d3e4666f56"
+      ]
+    },
+    {
+      "name": "P_kwidWindows_F",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "blinker_rear_R_Kuib",
+      "active": true,
+      "materials": [
+        "f5f45c81cf1f8794994d84d3e4666f56"
+      ]
+    },
+    {
+      "name": "brakelight_L_Kuib",
+      "active": true,
+      "materials": [
+        "f5f45c81cf1f8794994d84d3e4666f56"
+      ]
+    },
+    {
+      "name": "handle_R_Kuib",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "exhaust_Kuib",
+      "active": true,
+      "materials": [
+        "db2770946847f61498c657272d4cc380"
+      ]
+    },
+    {
+      "name": "brakelight_R_Kuib",
+      "active": true,
+      "materials": [
+        "f5f45c81cf1f8794994d84d3e4666f56"
+      ]
+    },
+    {
+      "name": "Seat_Front_Kwid",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "A_WindowsKwid_F",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "Antena.003",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "Chassis_INT",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "handle_L_Kuib",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "grille_Kuib",
+      "active": true,
+      "materials": [
+        "622da90a08df198429011190cada0fbc"
+      ]
+    },
+    {
+      "name": "V_Lanterna_R_Kuib",
+      "active": true,
+      "materials": [
+        "1c207242d0a293845a227c83aa51c036"
+      ]
+    },
+    {
+      "name": "retr_R_Kiub",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "50bcd320eb81652428c801e2d120b20a"
+      ]
+    },
+    {
+      "name": "Friso",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "TIREFL_KWID",
+      "active": true,
+      "materials": [
+        "205156d9197bdc94abade38b0ac14d9e"
+      ]
+    },
+    {
+      "name": "A_Tampãokwid_F",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "controlarmL_Kuib",
+      "active": true,
+      "materials": [
+        "406a3c9d1ac69ed4c8ecc2e4ff812621"
+      ]
+    },
+    {
+      "name": "RIMFR_KWID",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "33cea30744247f14f920d1289867b50e",
+        "406a3c9d1ac69ed4c8ecc2e4ff812621",
+        "622da90a08df198429011190cada0fbc"
+      ]
+    },
+    {
+      "name": "A_ChassisKwid_F",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "507a9d1ca42cf1c439aed8dce868b3fe",
+        "622da90a08df198429011190cada0fbc",
+        "f5f45c81cf1f8794994d84d3e4666f56",
+        "138e2f6fdfac5634e9b47ff765a00a71",
+        "d65b959d268a006448ca538de8163581"
+      ]
+    },
+    {
+      "name": "P_kwidLogo_F",
+      "active": true,
+      "materials": [
+        "622da90a08df198429011190cada0fbc",
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "TIRERR_KWID",
+      "active": true,
+      "materials": [
+        "205156d9197bdc94abade38b0ac14d9e"
+      ]
+    },
+    {
+      "name": "TIRERL_KWID",
+      "active": true,
+      "materials": [
+        "205156d9197bdc94abade38b0ac14d9e"
+      ]
+    },
+    {
+      "name": "axle_Kuib",
+      "active": true,
+      "materials": [
+        "406a3c9d1ac69ed4c8ecc2e4ff812621",
+        "523978239c130de4eb13dcbb3a23d83c"
+      ]
+    },
+    {
+      "name": "P_kwidWipe_F",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "SeatHead_Rear_Kwid",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "RIMRR_KWID",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "33cea30744247f14f920d1289867b50e",
+        "406a3c9d1ac69ed4c8ecc2e4ff812621",
+        "622da90a08df198429011190cada0fbc"
+      ]
+    },
+    {
+      "name": "blinker_front_R_Kuib",
+      "active": true,
+      "materials": [
+        "f5f45c81cf1f8794994d84d3e4666f56"
+      ]
+    },
+    {
+      "name": "Volante_Kwid",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "hood_Kuib",
+      "active": true,
+      "materials": [
+        "54bf754344467d846a80239c5f5e47ea"
+      ]
+    },
+    {
+      "name": "P_KwidCOMUM_F",
+      "active": true,
+      "materials": [
+        "54bf754344467d846a80239c5f5e47ea"
+      ]
+    },
+    {
+      "name": "reverselight_R_Kuib",
+      "active": true,
+      "materials": [
+        "f5f45c81cf1f8794994d84d3e4666f56"
+      ]
+    },
+    {
+      "name": "Mirror_M_Kwid",
+      "active": true,
+      "materials": [
+        "50bcd320eb81652428c801e2d120b20a",
+        "ea80046fca6fe944993f6d6e2b1c6495"
+      ]
+    },
+    {
+      "name": "lightsM_R_Kuib",
+      "active": true,
+      "materials": [
+        "5dfaaa1610d5f36468984fe4415737ae"
+      ]
+    },
+    {
+      "name": "reverselight_L_Kuib",
+      "active": true,
+      "materials": [
+        "f5f45c81cf1f8794994d84d3e4666f56"
+      ]
+    },
+    {
+      "name": "V_Lanterna_L_Kuib",
+      "active": true,
+      "materials": [
+        "1c207242d0a293845a227c83aa51c036"
+      ]
+    },
+    {
+      "name": "controlarmR_Kuib",
+      "active": true,
+      "materials": [
+        "406a3c9d1ac69ed4c8ecc2e4ff812621"
+      ]
+    },
+    {
+      "name": "blinker_front_L_Kuib",
+      "active": true,
+      "materials": [
+        "f5f45c81cf1f8794994d84d3e4666f56"
+      ]
+    },
+    {
+      "name": "V_Farol_R_Kuib",
+      "active": true,
+      "materials": [
+        "1c207242d0a293845a227c83aa51c036"
+      ]
+    },
+    {
+      "name": "retr_L_Kuib",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "50bcd320eb81652428c801e2d120b20a"
+      ]
+    },
+    {
+      "name": "RIMFL_KWID",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "33cea30744247f14f920d1289867b50e",
+        "406a3c9d1ac69ed4c8ecc2e4ff812621",
+        "622da90a08df198429011190cada0fbc"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1209 @@
+{
+  "name": "Polaris",
+  "manufacturer": "Malfada Adel",
+  "year": 2018,
+  "price": 61000,
+  "description": {
+    "pt": "Um compacto moderno e versátil, trazendo tecnologia e estilo para o dia a dia com um toque de esportividade.",
+    "en": "A modern and versatile compact, bringing technology and style to everyday life with a touch of sportiness."
+  },
+  "model": "Polaris.dae",
+  "models": [
+    "Polaris.dae"
+  ],
+  "frame": [
+    0,
+    0,
+    0,
+    1
+  ],
+  "props": [],
+  "placements": [],
+  "bodyColor": [
+    1,
+    1,
+    1
+  ],
+  "bodyColors": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0.5568628,
+      0.5647059,
+      0.5647059
+    ],
+    [
+      0.69803923,
+      0.74509805,
+      0.70980394
+    ],
+    [
+      0.8,
+      0,
+      0
+    ],
+    [
+      0.10980392,
+      0.10980392,
+      0.35686275
+    ],
+    [
+      0.11764706,
+      0.28235295,
+      0.44705883
+    ],
+    [
+      1,
+      0.4,
+      0
+    ],
+    [
+      0.4862745,
+      0.9882353,
+      0
+    ],
+    [
+      0.3529412,
+      0.3529412,
+      0.3529412
+    ],
+    [
+      0,
+      0.27058825,
+      0.68235296
+    ]
+  ],
+  "materials": {
+    "50bcd320eb81652428c801e2d120b20a": {
+      "name": "CarReflex",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.663,
+      "smoothness": 0.72,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": null,
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "88feebd7836779f4b96dec8b00b30149": {
+      "name": "pologtinterior",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/pologtinterior.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "e9a5c92d978acda47a0fe949b8a1d636": {
+      "name": "BlackColor",
+      "color": [
+        0,
+        0,
+        0
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/BlackColor.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "051457f4b4a8d1a48ad9a5154a5e38e5": {
+      "name": "remap_polobody",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.2,
+      "smoothness": 1,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/remap_s10.png",
+      "normalMap": null,
+      "emissionMap": null,
+      "role": "body"
+    },
+    "e4557d820d9b27e4b9c1f808aa3f8e02": {
+      "name": "vehiclegeneric256",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/vehiclegeneric256.PNG",
+      "normalMap": "textures/vehiclegeneric256_NM.PNG",
+      "emissionMap": null
+    },
+    "1ecd67fd3c746234b99b23f46d1dd650": {
+      "name": "vehiclelights128",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.04,
+      "smoothness": 0.45,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        4,
+        4,
+        4
+      ],
+      "emissionOn": false,
+      "map": "textures/vehiclelights128.PNG",
+      "normalMap": "textures/vehiclelights128_NM.PNG",
+      "emissionMap": "textures/vehiclelights128_on.png"
+    },
+    "06c86ebc9a9fb7f4081b06307b5d4dbc": {
+      "name": "CarWindows",
+      "color": [
+        0.11999995,
+        0.13999996,
+        0.15999997
+      ],
+      "opacity": 0.1,
+      "metallic": 0,
+      "smoothness": 0.96,
+      "transparent": true,
+      "alphaClip": false,
+      "cutoff": 0.762,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": null,
+      "normalMap": null,
+      "emissionMap": null,
+      "role": "glass"
+    },
+    "3107a719f31ca9c40948a11cc0a6d779": {
+      "name": "GenericLogo",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.36,
+      "smoothness": 0.18,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/GenericLogo.png",
+      "normalMap": "textures/GenericLogo_NM.png",
+      "emissionMap": null
+    },
+    "33cea30744247f14f920d1289867b50e": {
+      "name": "discs",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.25,
+      "smoothness": 0.1,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/discs.png",
+      "normalMap": "textures/discs_NM.png",
+      "emissionMap": null
+    },
+    "c12d07df75594f24bb4d4bf43a6d7da5": {
+      "name": "emblem",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/pologeneric.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "507a9d1ca42cf1c439aed8dce868b3fe": {
+      "name": "grill",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/grill.png",
+      "normalMap": "textures/grill_NM.png",
+      "emissionMap": null
+    },
+    "406a3c9d1ac69ed4c8ecc2e4ff812621": {
+      "name": "TextureAtlas",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.16,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/TextureAtlas.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "db2770946847f61498c657272d4cc380": {
+      "name": "CarMetal",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 1,
+      "smoothness": 0.432,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/CarMetal.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "9f8698c35838dc24e94b2c799dc468d7": {
+      "name": "CarSuspPreta",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/CarSuspPreta.png",
+      "normalMap": "textures/CarSuspPreta_NM.png",
+      "emissionMap": null
+    },
+    "988a6460995081f4d8d5ed6f2dd42e4f": {
+      "name": "carpetemacio",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/carpetemacio.png",
+      "normalMap": "textures/carpetemacio_NM.png",
+      "emissionMap": null
+    },
+    "d65b959d268a006448ca538de8163581": {
+      "name": "FundoCar",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.38,
+      "smoothness": 0.38,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/FundoCar.png",
+      "normalMap": "textures/FundoCar_NM.png",
+      "emissionMap": null
+    },
+    "205156d9197bdc94abade38b0ac14d9e": {
+      "name": "CarTire_Albedo",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/CarTire_Albedo.png",
+      "normalMap": "textures/CarTire_Normal.png",
+      "emissionMap": "textures/CarTire_Emissive.png"
+    },
+    "2b5d273be9f9bdc45a52455923b620c4": {
+      "name": "CarTireSide_Albedo",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.02,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/CarTireSide_Albedo.png",
+      "normalMap": null,
+      "emissionMap": null
+    },
+    "523978239c130de4eb13dcbb3a23d83c": {
+      "name": "discsfreioPreto",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0,
+      "smoothness": 0,
+      "transparent": false,
+      "alphaClip": false,
+      "cutoff": 0.5,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/discsfreioPreto.png",
+      "normalMap": "textures/discsfreioPreto_NM.png",
+      "emissionMap": null
+    },
+    "f5d3cd7a67420094784ec3a7a8bbe410": {
+      "name": "Alpha_CarEmblemas2",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "opacity": 1,
+      "metallic": 0.31,
+      "smoothness": 0.01,
+      "transparent": true,
+      "alphaClip": true,
+      "cutoff": 0.68,
+      "cull": 2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionOn": false,
+      "map": "textures/Alpha_CarEmblemas2.png",
+      "normalMap": "textures/Alpha_CarEmblemas2_NM.png",
+      "emissionMap": null
+    }
+  },
+  "parts": [
+    {
+      "name": "retrovisor",
+      "active": true,
+      "materials": [
+        "50bcd320eb81652428c801e2d120b20a",
+        "88feebd7836779f4b96dec8b00b30149"
+      ]
+    },
+    {
+      "name": "door_lf_Polaris",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "default.001",
+      "active": true,
+      "materials": [
+        "31321ba15b8f8eb4c954353edc038b1d"
+      ]
+    },
+    {
+      "name": "hood_Polaris",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5",
+        "e4557d820d9b27e4b9c1f808aa3f8e02"
+      ]
+    },
+    {
+      "name": "reverselight_L_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "WiperL_Polaris",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "P_Windows_root_Polaris",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "Seat_Rear_Polaris",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "P_brakelight_M_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "LightAllDay",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "door_rr__handle_Polaris_Paint",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    },
+    {
+      "name": "windows_FL_Colaris",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "windows_M_Polaris",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "RIM_JOHNNIEPOL_FL",
+      "active": true,
+      "materials": [
+        "3107a719f31ca9c40948a11cc0a6d779",
+        "e4557d820d9b27e4b9c1f808aa3f8e02",
+        "33cea30744247f14f920d1289867b50e"
+      ]
+    },
+    {
+      "name": "brakelight_R_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "Logo_grille_Polaris",
+      "active": true,
+      "materials": [
+        "c12d07df75594f24bb4d4bf43a6d7da5",
+        "3107a719f31ca9c40948a11cc0a6d779"
+      ]
+    },
+    {
+      "name": "bump_front_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650",
+        "e4557d820d9b27e4b9c1f808aa3f8e02",
+        "507a9d1ca42cf1c439aed8dce868b3fe"
+      ]
+    },
+    {
+      "name": "controlarm_FL_Polaris",
+      "active": true,
+      "materials": [
+        "406a3c9d1ac69ed4c8ecc2e4ff812621"
+      ]
+    },
+    {
+      "name": "door_lf_Mirror_Paint",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    },
+    {
+      "name": "steer",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "brakelight_L_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "V_Farol_R_Polaris",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "door_lr_Polaris_Paint",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    },
+    {
+      "name": "door_rf__handle_Polaris_Paint",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    },
+    {
+      "name": "door_lf_handle_Polaris_paint",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    },
+    {
+      "name": "door_lr_Polaris",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "windows_RL_Polaris",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "exaust_ok",
+      "active": true,
+      "materials": [
+        "db2770946847f61498c657272d4cc380"
+      ]
+    },
+    {
+      "name": "controlarm_FR_Polaris",
+      "active": true,
+      "materials": [
+        "406a3c9d1ac69ed4c8ecc2e4ff812621"
+      ]
+    },
+    {
+      "name": "windows_Front_Polaris",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "headlightsHigh_L_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "blinker_rear_L_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "V_Milha_R_Polaris",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "P_Spoiler_root_Polaris.001",
+      "active": true,
+      "materials": [
+        "e4557d820d9b27e4b9c1f808aa3f8e02"
+      ]
+    },
+    {
+      "name": "painel",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "RIM_JOHNNIEPOL_FR",
+      "active": true,
+      "materials": [
+        "3107a719f31ca9c40948a11cc0a6d779",
+        "e4557d820d9b27e4b9c1f808aa3f8e02",
+        "33cea30744247f14f920d1289867b50e"
+      ]
+    },
+    {
+      "name": "headlights_R_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "MileLight_L_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "spring_FR_Polaris",
+      "active": true,
+      "materials": [
+        "9f8698c35838dc24e94b2c799dc468d7",
+        "406a3c9d1ac69ed4c8ecc2e4ff812621"
+      ]
+    },
+    {
+      "name": "V_Lanterna_R_Polaris",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "windows_FR_Polaris",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "headlightsHigh_R_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "door_rf_Mirror",
+      "active": true,
+      "materials": [
+        "50bcd320eb81652428c801e2d120b20a",
+        "051457f4b4a8d1a48ad9a5154a5e38e5",
+        "e4557d820d9b27e4b9c1f808aa3f8e02"
+      ]
+    },
+    {
+      "name": "wiper",
+      "active": true,
+      "materials": [
+        "e4557d820d9b27e4b9c1f808aa3f8e02"
+      ]
+    },
+    {
+      "name": "door_lf_Polaris_paint",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    },
+    {
+      "name": "front_seat",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "chassis_Polaris_Paint",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    },
+    {
+      "name": "door_lr_handle_Polaris_Paint",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    },
+    {
+      "name": "RIM_JOHNNIEPOL_RR",
+      "active": true,
+      "materials": [
+        "3107a719f31ca9c40948a11cc0a6d779",
+        "e4557d820d9b27e4b9c1f808aa3f8e02",
+        "33cea30744247f14f920d1289867b50e"
+      ]
+    },
+    {
+      "name": "LightNight_R_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "grille_Extra_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650",
+        "e4557d820d9b27e4b9c1f808aa3f8e02"
+      ]
+    },
+    {
+      "name": "WiperR_Polaris",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "headlights_L_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "LightNight_L_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "reverselight_R_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "door_rf_Polaris",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "door_rr_Polaris_Paint",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    },
+    {
+      "name": "chassis_Polaris_Parts",
+      "active": true,
+      "materials": [
+        "e4557d820d9b27e4b9c1f808aa3f8e02",
+        "051457f4b4a8d1a48ad9a5154a5e38e5",
+        "88feebd7836779f4b96dec8b00b30149",
+        "988a6460995081f4d8d5ed6f2dd42e4f",
+        "d65b959d268a006448ca538de8163581",
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "door_rf_Mirror_Paint",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    },
+    {
+      "name": "V_Milha_L_Polaris",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "TIRE_JOHNNIEPOL_RL",
+      "active": true,
+      "materials": [
+        "205156d9197bdc94abade38b0ac14d9e",
+        "2b5d273be9f9bdc45a52455923b620c4"
+      ]
+    },
+    {
+      "name": "axle_Polaris",
+      "active": true,
+      "materials": [
+        "406a3c9d1ac69ed4c8ecc2e4ff812621",
+        "523978239c130de4eb13dcbb3a23d83c"
+      ]
+    },
+    {
+      "name": "P_Logo_root_Polaris",
+      "active": true,
+      "materials": [
+        "c12d07df75594f24bb4d4bf43a6d7da5",
+        "3107a719f31ca9c40948a11cc0a6d779"
+      ]
+    },
+    {
+      "name": "door_rf_Polaris_Paint",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    },
+    {
+      "name": "door_lf_Mirror",
+      "active": true,
+      "materials": [
+        "e4557d820d9b27e4b9c1f808aa3f8e02",
+        "50bcd320eb81652428c801e2d120b20a",
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    },
+    {
+      "name": "spring_FL_Polaris",
+      "active": true,
+      "materials": [
+        "9f8698c35838dc24e94b2c799dc468d7",
+        "406a3c9d1ac69ed4c8ecc2e4ff812621"
+      ]
+    },
+    {
+      "name": "bump_rear_Paint_Polaris",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    },
+    {
+      "name": "blinker_front_R_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "V_Farol_L_Polaris",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "TIRE_JOHNNIEPOL_FL",
+      "active": true,
+      "materials": [
+        "205156d9197bdc94abade38b0ac14d9e",
+        "2b5d273be9f9bdc45a52455923b620c4"
+      ]
+    },
+    {
+      "name": "door_rr_Polaris",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636",
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "windows_RR_Polaris",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "hub_FR_Polaris",
+      "active": true,
+      "materials": [
+        "406a3c9d1ac69ed4c8ecc2e4ff812621",
+        "523978239c130de4eb13dcbb3a23d83c"
+      ]
+    },
+    {
+      "name": "antenna_Polaris",
+      "active": true,
+      "materials": [
+        "e9a5c92d978acda47a0fe949b8a1d636"
+      ]
+    },
+    {
+      "name": "hub_FL_Polaris",
+      "active": true,
+      "materials": [
+        "406a3c9d1ac69ed4c8ecc2e4ff812621",
+        "523978239c130de4eb13dcbb3a23d83c"
+      ]
+    },
+    {
+      "name": "blinker_rear_R_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "V_Lanterna_L_Polaris",
+      "active": true,
+      "materials": [
+        "06c86ebc9a9fb7f4081b06307b5d4dbc"
+      ]
+    },
+    {
+      "name": "TIRE_JOHNNIEPOL_FR",
+      "active": true,
+      "materials": [
+        "205156d9197bdc94abade38b0ac14d9e",
+        "2b5d273be9f9bdc45a52455923b620c4"
+      ]
+    },
+    {
+      "name": "blinker_front_L_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "MileLight_R_Polaris",
+      "active": true,
+      "materials": [
+        "1ecd67fd3c746234b99b23f46d1dd650"
+      ]
+    },
+    {
+      "name": "bump_front_Paint_Polaris",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    },
+    {
+      "name": "TIRE_JOHNNIEPOL_RR",
+      "active": true,
+      "materials": [
+        "205156d9197bdc94abade38b0ac14d9e",
+        "2b5d273be9f9bdc45a52455923b620c4"
+      ]
+    },
+    {
+      "name": "P_Parts_root_Polaris",
+      "active": true,
+      "materials": [
+        "e4557d820d9b27e4b9c1f808aa3f8e02",
+        "88feebd7836779f4b96dec8b00b30149",
+        "f5d3cd7a67420094784ec3a7a8bbe410"
+      ]
+    },
+    {
+      "name": "RIM_JOHNNIEPOL_RL",
+      "active": true,
+      "materials": [
+        "3107a719f31ca9c40948a11cc0a6d779",
+        "e4557d820d9b27e4b9c1f808aa3f8e02",
+        "33cea30744247f14f920d1289867b50e"
+      ]
+    },
+    {
+      "name": "P_root_Polaris",
+      "active": true,
+      "materials": [
+        "051457f4b4a8d1a48ad9a5154a5e38e5"
+      ]
+    }
+  ]
+}
